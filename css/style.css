@@ -846,11 +846,17 @@ section{
     width: 70%;
 }
 }
-@media(max-width:420px){
-    .home-img img{
-        width: 80vw;
-        
+@media(max-width:412px) {
+    .home-img img {
+        width: 165vw;
+
     }
+}
+@media(max-width:360px) {
+    .home-img img {
+        width: 170vw;
+    }
+    
   .my-skill .row {
     margin-bottom: 10rem;
       grid-template-columns: 1fr;
