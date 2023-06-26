@@ -1,0 +1,50 @@
+
+
+.load {
+    position: fixed;
+    z-index: 999999999;
+    width: 100%;
+    height: 100%;
+    background: black;
+    display: block;
+   
+}
+
+.term {
+    font-family: monospace;
+    color: rgb(15, 215, 8);
+    opacity: 0.8;
+    font-size: 2em;
+    overflow-y: auto;
+    overflow-x: hidden;
+    padding-top: 10px;
+    padding-left: 20px;
+}
+
+.term:after {
+    content: "_";
+    opacity: 1;
+    animation: cursor 1s infinite;
+}
+
+@keyframes cursor {
+    0% {
+        opacity: 0;
+    }
+
+    40% {
+        opacity: 0;
+    }
+
+    50% {
+        opacity: 1;
+    }
+
+    90% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
