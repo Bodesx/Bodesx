@@ -1,6 +1,6 @@
 
 var textarea = $('.term');
-var speed = 55; //Writing speed in milliseconds
+var speed = 8; //Writing speed in milliseconds
 var text = '@bodesx portfolio_website.sh Activating Matrix...';
 var i = 0;
 runner();
@@ -17,7 +17,7 @@ function runner() {
         i = 0;
         setTimeout(function() {feedbacker();}, 1000);
       }
-    }, Math.floor(Math.random() * 220) + 50);
+    }, Math.floor(Math.random() * 220) + 8);
 }
 
 var count = 0;
