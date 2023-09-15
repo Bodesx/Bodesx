@@ -45,9 +45,9 @@
   data: {
     formOpen: false,
    name: {
+      name: '',
       email: '',
-      rating: '',
-     mobile : '',
+     mobileNumber : '',
       emailSubject: '',
       is_featured: false
     }
@@ -301,4 +301,3 @@ var parallaxInstance=new Parallax(parallax)
 
 
 
- 

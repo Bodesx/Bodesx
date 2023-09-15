@@ -12,10 +12,12 @@
     <link rel="stylesheet" href="css/contact.css">
     <link rel="stylesheet" href="css/circle.css">
 <link rel="stylesheet" href="css/loader.css">
+<link rel="stylesheet" href="css/serve.css">
+<link rel="stylesheet" href="css/matrix.css">
 
 
 
-
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.1.10/vue.min.js"></script>
@@ -32,6 +34,9 @@
         <div class="load" id="load">
             <pre class="term">Bodesx@dev:~$</pre>
         </div>
+
+
+
    
     <header class="header"><a href="#" class="logo"><img src="" alt=""></a>
 
@@ -60,7 +65,7 @@
 <div class="container">
    
 </div>
-   <h1>Bode Lawanson</h1> 
+   <h1>Bode  Lawanson</h1> 
     <div class="text"></div>
   
    <div class="social-media">
@@ -70,7 +75,7 @@
     <a href="https://linkedin.com/in/lawanson-bode-07378b246"><i class='bx bxl-linkedin-square bx-tada'></i></a>
     <a href="https://wa.me/message/2VQYINVLVCXFA1"><i class='bx bxl-whatsapp-square bx-tada'></i></a>
    </div>
-   <a href="./doucument/lawanson bode CV R.pdf" class="btn"><i class='bx bx-cloud-download'></i>Download CV</a>
+   <a href="./doucument/bode-cv wht 2.pdf" class="btn"><i class='bx bx-cloud-download'></i>Download CV</a>
 </div>
 
 
@@ -129,39 +134,69 @@
 <section class="services" id="services">
     <h2 class="heading">My <span>Services</span></h2>
 
-<div class="services-container">
-<div class="services-box">
+<div id="slider" class="tele">
+		<ul class="slider-wrapper">
+		<li class="current-slide">
+			<img src="img/bio.jpg" title="" alt="">
+
+			<div class="caption">
+<div class="slider-title">
 <i class='bx bx-dna'></i>
-    <h3>BioInformatics</h3>
+    <h2>BioInformatics</h2>
     <p> data-collection, data-analysis, machine learning, data science,</p>
-    <a href="https://www.genome.gov/genetics-glossary/Bioinformatics#:~:text=Bioinformatics%2C%20as%20related%20to%20genetics,or%20annotations%20about%20those%20sequences." class="btn">Read-More</a>
+    <a href="https://www.genome.gov/genetics-glossary/Bioinformatics#:~:text=Bioinformatics%2C%20as%20related%20to%20genetics,or%20annotations%20about%20those%20sequences.">Read-More</a>
 </div>
+		</li>
 
-    <div class="services-container"></div>
-    <div class="services-box">
+		<li>
+			<img src="img/cyber.jpg" title="" alt="">
+
+			<div class="caption">
+    <div class="slider-title">
     <i class='bx bx-laptop'></i>
-        <h3>I.T technician</h3>
+        <h2>I.T technician</h2>
         <p>hardware and software installation network installation computer troubleshooting and repair.</p>
-        <a href="https://resources.workable.com/it-technician-job-description" class="btn">Read-More</a>
+        <a href="https://resources.workable.com/it-technician-job-description">Read-More</a>
     </div>
+</div>
+		</li>
 
+		<li>
+			<img src="img/progr.jpg" title="" alt="">
 
-<div class="services-container"></div>
-<div class="services-box">
+		<div class="caption">
+<div class="slider-title">
     <i class='bx bx-world'></i>
-    <h3>Web Development</h3>
+    <h2>Web Development</h2>
     <p>html, css, javascript, Php, data-base implementation, Mern stack python codes.</p>
-    <a href="https://web.dev" class="btn">Read-More</a>
+    <a href="https://web.dev">Read-More</a>
 </div>
+      </div>
+      
+		</li>
 
+		<li>
+			<img src="img/art.jpg" title="" alt="">
 
-<div class="services-container"></div>
-<div class="services-box">
+		<div class="caption">
+<div class="slider-title">
     <i class='bx bxs-palette'></i>
-    <h3>Graphics design</h3>
+    <h2>Graphics design</h2>
     <p>photo-manipulation, vector art,.</p>
-    <a href="https://www.interaction-design.org/literature/topics/graphic-design#:~:text=Graphic%20design%20is%20a%20craft,to%20optimize%20the%20user%20experience." class="btn">Read-More</a>
+    <a href="https://www.interaction-design.org/literature/topics/graphic-design#:~:text=Graphic%20design%20is%20a%20craft,to%20optimize%20the%20user%20experience.">Read-More</a>
 </div>
+</div>
+		</li>
+		</ul>
+		<!-- Sombras -->
+		<div class="slider-shadow"></div>
+		
+		<!-- Controles de Navegacion -->
+		<ul id="control-buttons" class="control-buttons"></ul>
+	</div>
+	
+	
+	
 </div>
 </section>
 
@@ -172,7 +207,7 @@
 <section class="skills" id="skills">
    <div class="heading">
     <span>Technical and professional</span>
-    <h3>My Skill</h3>
+    <h3>Skills</h3>
    </div>
 
    <div class="skill-main">
@@ -318,66 +353,124 @@
 <section class="portfolio" id="portfolio">
     <h2 class="heading">latest <span>project</span></h2>
 
-    <div class="portfolio-container">
-        <div class="portfolio-box">
-            <img src="img/portfolio1.jpg" alt="">
-            <div class="portfolio-layer">
-                <h4>Bioinformatics</h4>
-                <p>Ms.c project: A model for managing critical phamaceutical prescriptions</p>
-           <a href="#"><i class='bx bx-link-external'></i></a>
-            </div>
+    <div class="container404">
+        <div class="matrix">
+     
+            <h2>matrix overload </h2>
+            <p>hey b4 u go bending the spoon take a look at some of my latest stack;)</p>
         </div>
-
-        <div class="portfolio-box">
-            <img src="img/portfolio2.jpg" alt="">
-            <div class="portfolio-layer">
-                <h4>Data Science</h4>
-                <p>data analytics.</p>
-                <a href="#"><i class='bx bx-link-external'></i></a>
-            </div>
-        </div>
-
-
-    <div class="portfolio-box">
-        <img src="img/portfolio3.jpg" alt="">
-        <div class="portfolio-layer">
-            <h4>Computer technician</h4>
-            <p>troubleshooting software hardware repair and replacement O.S installation, driver installations etc.</p>
-            <a href="#"><i class='bx bx-link-external'></i></a>
-        </div>
-        </div>
-<div class="portfolio-box">
-    <img src="img/portfolio5.jpg" alt="">
-    <div class="portfolio-layer">
-        <h4>Network technician</h4>
-        <p>network troubleshooting.</p>
-        <a href="#"><i class='bx bx-link-external'></i></a>
-    </div>
-</div>
-
-
-
-    
-        <div class="portfolio-box">
-            <img src="img/portfolio4.jpg" alt="">
-            <div class="portfolio-layer">
-                <h4>Web Development</h4>
-                <p>portfolio, camp-finder, music-app blogging-app</p>
-                <a href="#"><i class='bx bx-link-external'></i></a>
-            </div>
-            </div>
-
-        
-            <div class="portfolio-box">
-                <img src="img/portfolio6.jpg" alt="">
-                <div class="portfolio-layer">
-                    <h4>Graphics Design</h4>
-                    <p>logo-design, graphic design.</p>
-                    <a href="#"><i class='bx bx-link-external'></i></a>
+        <div class="stack-container">
+            <div class="card-container">
+                <div class="perspec" style="--spreaddist: 125px; --scaledist: .75; --vertdist: -25px;">
+                    <div class="card">
+                        <div class="writing">
+                            <div class="topbar">
+                                <div class="red"></div>
+                                <div class="yellow"></div>
+                                <div class="green"></div>
+                            </div>
+                            <div class="code">
+                                <ul>
+                                  
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
-
-    </div>
+            <div class="card-container">
+                <div class="perspec" style="--spreaddist: 100px; --scaledist: .8; --vertdist: -20px;">
+                    <div class="card">
+                        <div class="writing1">
+                            <div class="topbar">
+                                <div class="red"></div>
+                                <div class="yellow"></div>
+                                <div class="green"></div>
+                            </div>
+                            <div class="code">
+                                <ul>
+                                  
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="card-container">
+                <div class="perspec" style="--spreaddist:75px; --scaledist: .85; --vertdist: -15px;">
+                    <div class="card">
+                        <div class="writing2">
+                            <div class="topbar">
+                                <div class="red"></div>
+                                <div class="yellow"></div>
+                                <div class="green"></div>
+                            </div>
+                            <div class="code">
+                                <ul>
+                                  
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="card-container">
+                <div class="perspec" style="--spreaddist: 50px; --scaledist: .9; --vertdist: -10px;">
+                    <div class="card">
+                        <div class="writing3">
+                            <div class="topbar">
+                                <div class="red"></div>
+                                <div class="yellow"></div>
+                                <div class="green"></div>
+                            </div>
+                            <div class="code">
+                                <ul>
+                                  
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="card-container">
+                <div class="perspec" style="--spreaddist: 25px; --scaledist: .95; --vertdist: -5px;">
+                    <div class="card">
+                        <div class="writing4">
+                            <div class="topbar">
+                                <div class="red"></div>
+                                <div class="yellow"></div>
+                                <div class="green"></div>
+                            </div>
+                            <div class="code">
+                                <ul>
+                                   
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="card-container">
+                <div class="perspec" style="--spreaddist: 0px; --scaledist: 1; --vertdist: 0px;">
+                    <div class="card">
+                        <div class="writing5">
+                            <div class="topbar">
+                                <div class="red"></div>
+                                <div class="yellow"></div>
+                                <div class="green"></div>
+                            </div>
+                            <div class="code">
+                                <ul>
+                                   
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+ 
+    </div> 
 
 </section>
 
@@ -398,14 +491,14 @@
             <div class="button-copy" v-show="!formOpen" @click="formOpen = true">Contact</div>
             <form @submit="cancel()">
     
-                    <form action="#">
+                    <form action="https://formsubmit.co/bodesxlaw@gmail.com" method="POST">
                         <div class="input-box">
-                            <input type="text" placeholder="Name">
-                            <input type="text" placeholder="Email">
+                            <input type="text" name="name" placeholder="Name">
+                            <input type="text" name="email" placeholder="Email">
                         </div>
                         <div class="input-box">
-                            <input number="text" placeholder="Mobile number">
-                            <input type="text" placeholder="Email subject">
+                            <input number="text" name="number" placeholder="Mobile number">
+                            <input type="text" name="subject" placeholder="Email subject">
                         </div>
                         <textarea name="" id="" cols="30" rows="10" placeholder="Your message"></textarea>
                         <input type="submit" value="Send Message" class="btn">
@@ -445,7 +538,7 @@
             
     </ul>
    
-<p>Cc 2023 by BodiTs|All Right Reserve</p>
+<p>Cc 2023 by BodsxITs|All Right Reserve</p>
 </footer>
         
 
@@ -454,13 +547,14 @@
 
 <canvas id="canvas" style="background: #111;"></canvas>
 
-<script src="https://unpkg.com/scrollreveal"></script>
+
 
 <script src="https://unpkg.com/typed.js@2.0.15/dist/typed.umd.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/parallax/3.1.0/parallax.min.js"></script>
+<script src="https://unpkg.com/scrollreveal"></script>
 
-
-<script src="script.js"></script>
+<script src="error404.js"></script>
+<script src="script.js"var j = jQuery.noConflict();></script>
 <script src="wobb.js"></script>
 
 
@@ -470,7 +564,11 @@
 
 
 <script src="loader.js"></script>
-<script src="circle-progress"></script>
+<script src="serve.js"></script>
+
+
+
+
 </body>
 
 

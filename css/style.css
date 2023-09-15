@@ -71,7 +71,7 @@ section{
 .navbar a {
     font-size: 1.2rem;
     color: var(--text-color);
-    margin-left:2rem;
+    margin-left:1rem;
 }
 
 .navbar a:hover,
@@ -293,38 +293,11 @@ home-content p{
     gap: 1rem;
 }
 
-.services-container .services-box{
-    flex: 1 1 30rem;
-background-image: url("../img/bb.jpg");
-    padding: 3rem 2rem 3rem;
-    border-radius: 2rem;
-    text-align: center;
-    border:.1rem solid var(--main-color);  
-   transition: 5s ease;
-}
-.services-container .services-box :hover{
-    border-color: var(--main-color);
-    transform:scale(1.02) ;
-}
 
-
-
-.services-box i {
-    font-size: 1.5rem;
-    color: var(--main-color);
-}
-.services-box h3{
-    font-size: 1.5rem;
-}
-
-.services-box p{
-    font-size:0.8rem;
-    margin: 0rem 1 1rem;
-}
 
 
 .portfolio{
-    background-image: url("../img/bbo.jpg");
+    background-image: url("../img/noise2.jpg");
     background-size: cover;
 }
 

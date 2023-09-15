@@ -1,7 +1,7 @@
 
 var textarea = $('.term');
 var speed = 50; //Writing speed in milliseconds
-var text = '@bodesx portfolio_website.sh';
+var text = '@bodesx portfolio_website.sh All Right Reserved';
 var i = 0;
 runner();
 
