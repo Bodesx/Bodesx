@@ -1,7 +1,7 @@
 
 var textarea = $('.term');
-var speed = 50; //Writing speed in milliseconds
-var text = '@bodesx portfolio_website.sh All Right Reserved';
+var speed = 55; //Writing speed in milliseconds
+var text = '@bodesx portfolio_website.sh Activating Matrix...';
 var i = 0;
 runner();
 
