@@ -649,20 +649,27 @@ to { box-shadow: 0 0 100px 15px #F4F6AD; }
 
 /*footer scroolbar*/
 ::-webkit-scrollbar {
-    width: 5px;
-    height: 5px;
+    width:12px;
+    height: 8px; 
 }
+
+::-webkit-scrollbar-thumb {
+    border-radius: 40px;
+    background: #c2c9d2;
+  }
+
+
 
 ::-webkit-scrollbar-track {
     background: #1C1C1E;
 }
 
 ::-webkit-scrollbar-thumb {
-    background: #f5f90c;
+    background: #432c02;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-    background: #3eb6f7;
+    background: #022437;
 }
 
 
