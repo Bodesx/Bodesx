@@ -116,6 +116,7 @@ section{
     left: -280px;
     max-width: 750px;
     object-fit: cover;
+    mix-blend-mode: color-burn;
 }
 
 .glowing-circle .image{
@@ -125,7 +126,7 @@ section{
     border-radius: 80%;
     z-index: 1;
     overflow: hidden;
-     mix-blend-mode: color-burn;
+     
 }
 
 
