@@ -143,7 +143,7 @@ a {
 }
 
 .control-buttons li.active {
-	background: #00c5b9;
+	background: #0f7dd6;
 }
 
 .authors {
@@ -154,6 +154,12 @@ a {
 	font-weight: 300;
 	margin-top: 80px;
 	font-size: 300;
+}
+.q1 {
+	color: blue;
+}
+.q2 {
+	color: red;
 }
 
 /** ---------------------------------------
@@ -180,10 +186,8 @@ a {
  		height: 200px;
  	}
 	
- 	.slider-wrapper .caption {
- 		display: none;
- 	}
-
+ 	
+ 
  }
 
  @media only screen and (max-width: 410px) {
