@@ -125,6 +125,7 @@ section{
     border-radius: 80%;
     z-index: 1;
     overflow: hidden;
+     mix-blend-mode: color-burn;
 }
 
 
