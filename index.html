@@ -14,6 +14,7 @@
 <link rel="stylesheet" href="css/loader.css">
 <link rel="stylesheet" href="css/serve.css">
 <link rel="stylesheet" href="css/matrix.css">
+<link rel="stylesheet" href="css/svg logo.css">
 
 
 
@@ -22,9 +23,24 @@
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.1.10/vue.min.js"></script>
    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.ripples/0.5.3/jquery.ripples.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/parallax/3.1.0/parallax.min.js"></script>
 
+<script src="https://cdnjs.cloudflare.com/ajax/libs/parallax/3.1.0/parallax.min.js"></script>
+<script src = "https://code.jquery.com/jquery-2.2.4.min.js"></script>
+
+<script src = "https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src = "https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.1/TweenMax.min.js"></script>
+
+ 
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+    <script src="https://rawgithub.com/DmitryBaranovskiy/raphael/300aa589f5a0ba7fce667cd62c7cdda0bd5ad904/raphael-min.js"></script>
+    <script src="https://rawgithub.com/DmitryBaranovskiy/g.raphael/master/g.raphael.js"></script>
+    <script src="https://rawgithub.com/DmitryBaranovskiy/g.raphael/master/g.pie.js"></script>
+
+
+ <script src ="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>          
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.ripples/0.5.3/jquery.ripples.min.js"></script>
 
 </head>
 
@@ -59,7 +75,7 @@
     
 
 <!--home section design-->
-<section class="home" id="home">
+<section class="page__style home" id="home">
 <div class="home-content">
     
 <div class="container">
@@ -82,8 +98,8 @@
 <div class="home-img" >
     <div class="glowing-circle">
         <div class="image">
-        <div class="glitch">
-    <img src="img/bodesx bw.png" alt="">
+       
+    <img img id="i" class="glich" src="img/bodesx bw.png" alt="">
     
     </div>
 </div>
@@ -99,7 +115,7 @@
 
 <!--about section-->
 
-<section class="about" id="about">
+<section class="page__style about" id="about">
 
 <div class="about-img" id="parallax">
 
@@ -116,7 +132,21 @@
     <p class="multiple-text"></p>
    
 
-
+<div class="laptop">
+			<div class="screen">
+				<div class="signature">
+					<div class="dot dot1"></div>
+					<div class="dot dot2"></div>
+					<div class="dot dot3"></div>
+					<div class="dot dot4"></div>
+					<div class="dot dot5"></div>
+					<svg viewBox="-5 -5 650 425">
+						<path d="M874.22,517q-2.67,30.67-17.48,61.65a347.11,347.11,0,0,1-35.43,58.46,448.45,448.45,0,0,1-40.72,47.66q-20.1,20.16-33.45,29.43c-1.16.64-2,.32-2.53-1a13.21,13.21,0,0,1-.78-4.92,13.89,13.89,0,0,1,.83-5.11,25.12,25.12,0,0,1,5.79-7.91,1.58,1.58,0,0,1,2.3-.29,4.28,4.28,0,0,1,1.57,2.8q12-9.46,30.18-28.75a464.8,464.8,0,0,0,36.9-44.86,336.51,336.51,0,0,0,32.07-53.65q13.38-28.07,15.87-55.08.82-14.48-3.13-20.94T855.91,487a29,29,0,0,0-12.79.78,47.15,47.15,0,0,0-10.49,4.15,10.75,10.75,0,0,0-3.55,2.5,28.34,28.34,0,0,0-2.53,3.67c-.43.64-.92,1.42-1.47,2.31q-1.11,1.74-6.53,9.46t-12,15.34q-6.59,7.62-11,9.26t-3.49-8.78q.91-6,7.13-14a143.2,143.2,0,0,1,13.25-14.85q7-6.85,10.53-9.56c.43-.25.83-.51,1.2-.77,1-.9,1.87-1.73,2.67-2.51a19.67,19.67,0,0,0,2.76-3.66,303.64,303.64,0,0,0,20.66-37.73q8.88-19.38,11.18-34t-5.75-19q-8.05-4.44-30.14,7.14c-.55.26-1.07.51-1.56.77a6.84,6.84,0,0,0-2.67,1.74,10.33,10.33,0,0,0-1.93,4.43q-12.24,47.09-26.6,91.66-11.41,35.88-21.71,73.13a44.37,44.37,0,0,0-1.2,6.37c-.18,1.8-.28,3.41-.28,4.82,0,1,0,2-.13,3a13,13,0,0,1-.6,2.8,34,34,0,0,1-2,3.86,8.38,8.38,0,0,1-2.67,3c-1,.58-1.83.22-2.62-1.06a7.61,7.61,0,0,1-.74-3.67,16.85,16.85,0,0,1,.65-3.86q25.57-91.85,50.88-173.46a14.75,14.75,0,0,0,.78-4.73c-.09-1-1-.93-2.71.09q-26.51,16.22-50.89,43.42-4.59,5.2-13.75,17.27A250.3,250.3,0,0,0,728,493.53,101.53,101.53,0,0,0,716.36,523q-3,14.28,4.83,23.93a6.51,6.51,0,0,1,1.52,3.76,2.79,2.79,0,0,1-.92,2.51c-.64.45-1.49.16-2.53-.87A35.33,35.33,0,0,1,711.07,527a82,82,0,0,1,7.27-28.75,202.65,202.65,0,0,1,26.59-44.18,264.5,264.5,0,0,1,33.31-35.22,240.31,240.31,0,0,1,32.3-24.21c.92-.52,1.66-1,2.21-1.36a4,4,0,0,0,1.47-.86,5.34,5.34,0,0,0,.88-1.35c.27-.58.66-1.58,1.15-3,.24-.78.58-1.74,1-2.9a23.68,23.68,0,0,1,2.39-5c1.11-1.8,2.13-2.76,3.08-2.89s1.49,1.74,1.61,5.6v.77a10.26,10.26,0,0,0,.19,2.7c.12.26.43.19.92-.19l1.1-.58q26.51-12.54,35.2-2.32t2.67,34.93q-6,24.69-23.6,55.95a.94.94,0,0,0-.37.58c-1,1.42-1.46,2.32-1.43,2.7s.84.33,2.44-.19a26.61,26.61,0,0,1,15.23-.58q8.05,1.94,13.34,11.29T874.22,517ZM933,533.58q-2,5.5-4.78,15.34-9.39,32.61-18.73,64.25T893.81,666q-6.3,21.12-6.67,22.09c-.43,1.42-.94,2.25-1.52,2.51s-1-.07-1.24-1a9.52,9.52,0,0,1,.46-4.44q5.24-19.11,13.06-47.86Q909.5,594.66,917,568q1.93-6.36,1.47-5.79a58,58,0,0,0-2.76,5.41c-.24.64-.52,1.28-.82,1.93q-4.43,9.25-11.41,22.48T889,617.13q-7.46,11.86-13.11,16.59t-7.32-3.18q-1-6.85,3.19-21.54a2.54,2.54,0,0,1-1.58-.07,6,6,0,0,1-2.81-2.12c-.43-.77-.82-1.13-1.19-1.06s-.74.86-1.11,2.41q-.91,3.47-2.34,8.1a68.34,68.34,0,0,1-2.72,7.53q-6.43,13.11-12.1,9.64t-5.47-20.54q.18-17.08,11.5-44.67,4.32-9.84,6.9-11.39c1.41-1,2.49-.93,3.22.29s.77,3.64.09,7.24c-1.28,2.83-2.33,4.56-3.13,5.21s-1.44.9-1.93.77a2.26,2.26,0,0,0-.69.1c-.21.06-.41.35-.6.86q-8.73,21.81-10.62,35.12t.5,18q2.4,4.72,6.44.29,1.85-2.31,4.14-8.68A114.73,114.73,0,0,0,862,603.53c.18-.64.33-1.16.46-1.55a4.13,4.13,0,0,0,.27-1.35,2.74,2.74,0,0,0-.46-1.35,41.93,41.93,0,0,1-2.85-9.16,28.5,28.5,0,0,1-.46-10.33q.74-3.07,2.76-2.7t3.87,4.44q1.83,4.05,1.93,12.16.18,5.79,1.93,8c1.17,1.48,2.45,2,3.87,1.55l.16-.07a239.12,239.12,0,0,1,10.79-27.62q7.63-16.59,16.1-27t15.37-7.34a7.11,7.11,0,0,1,2.48,2.32,5.07,5.07,0,0,0,.87.87c.28.19.6.06,1-.39a14.28,14.28,0,0,0,1.47-2.6q3.6-7,5.89-12.74t4.88-14.86q7.81-27.58,12.42-42.25a398.12,398.12,0,0,1,14.26-39q8-18.72,14-28.94a12.11,12.11,0,0,1,4-4.35,3.81,3.81,0,0,1,4.14-.38c1.23.71,1.93,2.67,2.12,5.88q-.37,6.18-6.08,23.93-8.93,27.21-19.09,50.65t-19.28,41Q935,528.09,933,533.58Zm10.77-37.82a39.63,39.63,0,0,0,2.9-5.5q2-4.25,4.28-9.45c1-2.32,2-4.5,2.94-6.56a472.67,472.67,0,0,0,19.51-50.17,75.51,75.51,0,0,0,2.48-9.17c.25-1.6.11-2.25-.41-1.93a9.8,9.8,0,0,0-2.21,2.71q-1.43,2.22-2.9,4.92t-2.39,4.63q-4.87,10.8-10.72,26.14t-9.89,28.27q-3,10.23-3.77,13.8C943.05,495.83,943.12,496.6,943.73,495.76Zm-27.24,54.8a2,2,0,0,0-1.38-1.64q-6.35-1.54-14.9,11.1a190,190,0,0,0-16.06,29.52q-7.5,16.89-10.54,28.07a52.43,52.43,0,0,0-1.61,7.82q-.22,2.6,2,.09,6.63-7.71,18-27.68t23.64-44.48A5.39,5.39,0,0,0,916.49,550.56Zm42.85-17.76q-2.76-.19-9.24,11.1t-12.7,24.21q-6.21,12.93-8.15,17.56-2.21,6-3,5.89t-.32-11.48q.64-14.67,5.71-36.86a12.5,12.5,0,0,0,.23-5c-.28-1.41-1-2.05-2.17-1.93a4.87,4.87,0,0,0-3.22,3.38,30.63,30.63,0,0,0-1.19,5.89,7.05,7.05,0,0,0,.09,1.25,3.27,3.27,0,0,0,.18.68,3.1,3.1,0,0,1,.28.86,8.69,8.69,0,0,1,.09,1.45,15.17,15.17,0,0,1-.27,2.51c-.07.39-.13.77-.19,1.16q-1.56,8.68-2.67,18.52a83.83,83.83,0,0,0-.09,18.72c.37,2.7.68,4.57.92,5.59a9.53,9.53,0,0,1,.23,1.35,3.21,3.21,0,0,1-.18,1.26c-.16.45-.42,1.13-.78,2s-.89,2.26-1.57,4.06q-7.55,19.49-8.46,34a29.23,29.23,0,0,0,.13,5.59c.22,1.55.66,2.44,1.34,2.7q.74,0,.87-1.44a24.56,24.56,0,0,0,0-3.38c0-.77,0-1.54.09-2.32q.92-12.74,9.75-32.8a10.92,10.92,0,0,0,.56-1.35,8.38,8.38,0,0,1,.73-1.54.48.48,0,0,1,.65-.2,4.74,4.74,0,0,1,1.1,1.16c.06,0,.09.07.09.2q4.78,4.43,10.17,1.54A34.66,34.66,0,0,0,948.76,598a131.35,131.35,0,0,0,8.65-12,6.82,6.82,0,0,0,1.34-3.48c0-1-.23-1.67-.79-1.93s-1.19.2-1.93,1.35q-16.29,23.36-24.75,19.49c-1.41-.51-2.13-1.18-2.16-2a8.75,8.75,0,0,1,1.24-3.77Q941.67,572,951,555.38q.56-1.15,1.11-2.13c.24-.51.61-1.18,1.1-2a9.93,9.93,0,0,1,1.52-2c.52-.51.93-.64,1.24-.38.55.64,1,.71,1.47.19a7.67,7.67,0,0,0,1.2-2.7c.18-.64.43-1.42.73-2.32a37.18,37.18,0,0,0,1.43-4.44,11.94,11.94,0,0,0,.42-4.14A3.06,3.06,0,0,0,959.34,532.8Zm103.37-9.19a2,2,0,0,0,.51-1.85,3.15,3.15,0,0,0-1.06-1.92,1.88,1.88,0,0,0-1.7-.36q-9.86,3.24-19.51,7.19a5.49,5.49,0,0,0-.83.36,5.06,5.06,0,0,1-1.06.54q-.49.18-.69,0c-.12-.12-.06-.46.19-1,.55-1.12,1.16-2.36,1.84-3.71q4.32-8.62,9.52-20.78a117.25,117.25,0,0,0,7.45-23.71q2.27-11.57-2.25-18.38-6.43-7.79-19-4.49t-27.19,12.87A233,233,0,0,0,982,488.89q-12.35,11-18.41,18.62-12.15,15.57-10.76,26.94t17.39,16.89q2.94.72,3.72-2c.52-1.8-.17-3.77-2.07-5.93a3.92,3.92,0,0,0-1-.6.88.88,0,0,0-.6,0,1.06,1.06,0,0,0-.41.48,5.23,5.23,0,0,1-.65.48,1.63,1.63,0,0,1-1,.18,5.75,5.75,0,0,1-1.89-.66q-9.48-5.26-8.65-12.81T966.23,513q5.16-6.82,16.66-17.55A245.57,245.57,0,0,1,1008,475.06q13.62-9.71,25.3-13.66t17.3,2.52q3.14,4.43,1.84,12.87a92.66,92.66,0,0,1-4.92,18.2q-3.65,9.76-7.82,18.33t-6.86,13.47a13,13,0,0,1-2.34,3.35,9.13,9.13,0,0,1-3.09,1.8q-22.26,9.33-44.07,20.47a42.23,42.23,0,0,0-4.51,2.76,23.66,23.66,0,0,0-5.2,4.67,4.78,4.78,0,0,0-.88,5.39c.8.4,2,.28,3.5-.36a20.85,20.85,0,0,0,4.46-2.58,16.44,16.44,0,0,0,3.18-2.93,2.86,2.86,0,0,0,.27-.42.75.75,0,0,0,.1-.3l.13-.18a1.79,1.79,0,0,1,.19-.18,5.34,5.34,0,0,1,.5-.36,6.08,6.08,0,0,0,1-.48q3-1.55,9.75-5t14.08-7a112.93,112.93,0,0,1,12.15-5.15q4.77-1.62,3.95.42c-.55,1.12-1.23,2.43-2,4q-7.46,14.73-20.84,42T979,638q-10.82,24-10.54,29.16c1.59,1.19,2.73,1.43,3.4.71a8.17,8.17,0,0,0,1.66-3.59,29.3,29.3,0,0,1,1.2-3.47q22.35-49.69,46.37-98.2,5.8-12,11.6-24a9.73,9.73,0,0,1,5.06-4.91c1.72-.72,3.4-1.43,5.06-2.15q9-4,18.31-7.07A3.63,3.63,0,0,0,1062.71,523.61Zm64.78,59.8a6.19,6.19,0,0,1,.65-.39q14.44-12.35,30.23-34.15a292.36,292.36,0,0,0,28.84-50.56,261.17,261.17,0,0,0,19-61.74q4.6-27.39,1.47-43.61t-12-22.57q-8.83-6.37-21.25-4.44-12.62,2.12-32.3,15.34t-40,33.77a233.16,233.16,0,0,0-34.65,44.47q-14.31,23.93-16,47.28-.37,12.91,4.6,19.68t11.13,7.52a8.86,8.86,0,0,0,9.39-4.63,10.34,10.34,0,0,0,.83-6,8.77,8.77,0,0,0-2.07-4.15,8.62,8.62,0,0,0-3-2.22,1.84,1.84,0,0,0-1.71.58,5,5,0,0,0-1,2.89q-.29,2.71-2.49,3.09a7,7,0,0,1-5-1.45,15.3,15.3,0,0,1-4.83-5.3,15.61,15.61,0,0,1-1.94-8.3q1.66-20.84,15.69-43a234,234,0,0,1,34-41.77,275.75,275.75,0,0,1,39-32.42q19.1-12.82,30.78-14.95,19-2.33,25.26,12t2.86,37.72A233.74,233.74,0,0,1,1190.07,475a294.48,294.48,0,0,1-30.42,59.14q-18.17,27.1-36.39,41.58a14.94,14.94,0,0,1-1.56,1.35,5.38,5.38,0,0,1-1.29,1,.84.84,0,0,1-.92-.2,11,11,0,0,1-1.38-1.54,5.88,5.88,0,0,1-1-1.16,24.78,24.78,0,0,0-3.92-4,6.89,6.89,0,0,0-4.27-1.84q-3.4,1-4.7,7.82a20.16,20.16,0,0,0,1.15,12.25q2.45,5.4,10.26,2.32a12.07,12.07,0,0,0,1.57-.78,5.19,5.19,0,0,1,1.61-.67,1.14,1.14,0,0,1,1.06.38,9.91,9.91,0,0,1,1.19,1.84c.43.64,1,1.47,1.66,2.51q4.61,6.75,10.49,15.82,9.19,14.28,20,29.62a207.79,207.79,0,0,0,21.35,26.14q10.57,10.8,19.14,11.39a2,2,0,0,0,2.11-1.55,4.78,4.78,0,0,0-.09-3.08,2,2,0,0,0-2-1.55q-7.46-.57-17-11a212.54,212.54,0,0,1-19.46-25.27q-9.95-14.87-18.5-29-6.63-10.8-11.5-18.13c-1-1.42-1.52-2.42-1.43-3S1126.45,584.18,1127.49,583.41Zm-43.89-77c.74-2.57,1.47-5.08,2.21-7.53q5.52-18.52,10.58-37.62a16.68,16.68,0,0,0,.46-4.25,9.5,9.5,0,0,0-.73-4c-1.29-2.19-2.84-2.15-4.65.1a38.71,38.71,0,0,0-5.11,9,70,70,0,0,0-3.31,9.07,19,19,0,0,0-.83,5.11,3.85,3.85,0,0,0,1.66,3.38,1.4,1.4,0,0,1,.73,1.35,11.23,11.23,0,0,1-.46,2.7q-4.5,17.94-9.57,34.93-.74,2.7-1.47,5.2-2.29,8.12-7.45,25.09-6.81,22.77-15.28,51.71t-15,53.64q-6.53,24.71-7.45,34.54v1a19.94,19.94,0,0,0-.18,3.86c.06,1.28.39,2,1,2.31.79.13,1.35-.39,1.65-1.54a17.93,17.93,0,0,0,.56-3.67q.91-8.1,9.06-37.14t18.54-64q10.4-34.92,18.13-60.2Q1081.67,512.79,1083.6,506.42Z" transform="translate(-711 -365.5)"/>
+					</svg>
+				</div>
+			</div>
+		</div>
+	
 </div>
 
 </section>
@@ -128,26 +158,51 @@
 
 
 
-
+ 
 
 
 <!--service section-->
-<section class="services" id="services">
+<section class="page__style services" id="services">
     <h2 class="heading">My <span>Services</span></h2>
 
 <div id="slider" class="tele">
 		<ul class="slider-wrapper">
 		<li class="current-slide">
 			<img src="img/bio.jpg" title="" alt="">
+       <canvas id="tv"></canvas>
+            
 
-			<div class="caption">
+		<li>
+			<img src="img/bio.jpg" title="" alt="">
+       
+            
+<div class="caption">     
 <div class="slider-title">
 <i class='bx bx-dna'></i>
     <h2>BioInformatics</h2>
     <p> data-collection, data-analysis, machine learning, data science,</p>
     <a href="https://www.genome.gov/genetics-glossary/Bioinformatics#:~:text=Bioinformatics%2C%20as%20related%20to%20genetics,or%20annotations%20about%20those%20sequences.">Read-More</a>
+
+</div>
 </div>
 		</li>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 		<li>
 			<img src="img/cyber.jpg" title="" alt="">
@@ -199,125 +254,502 @@
 </div>
 
 	<!-- content -->
-	<p class="authors">
-		Before you take the <q class="q1">Blue Pill</q> or <q class="q2">Red Pill</q> kindly tap on the tv displayed on your screen, to view my services <a href="">Bodesx</a>
-	</p>
+    <div id="testim" class="testim">
+<!--         <div class="testim-cover"> -->
+            <div class="wrap">
+
+                <span id="right-arrow" class="arrow right fa fa-chevron-right"></span>
+                <span id="left-arrow" class="arrow left fa fa-chevron-left "></span>
+                <ul id="testim-dots" class="dots">
+                    <li class="dot active"></li><!--
+                    --><li class="dot"></li><!--
+                    --><li class="dot"></li><!--
+                    --><li class="dot"></li><!--
+                    --><li class="dot"></li>
+                </ul>
+                <div id="testim-content" class="cont">
+                    
+                    <div class="active">
+                        <div class="img"><img src="./img/girl.jpg" alt=""></div>
+                        <h2>Lorem P. Ipsum</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>                    
+                    </div>
+
+                    <div>
+                        <div class="img"><img src="./img/girl 2.jpg" alt=""></div>
+                        <h2>Mr. Lorem Ipsum</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>                    
+                    </div>
+
+                    <div>
+                        <div class="img"><img src="./img/boy.jpg" alt=""></div>
+                        <h2>Lorem Ipsum</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>                    
+                    </div>
+
+                    <div>
+                        <div class="img"><img src="./img/boy2.jpg" alt=""></div>
+                        <h2>Lorem De Ipsum</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>                    
+                    </div>
+
+                    <div>
+                        <div class="img"><img src="./img/boy.jpg" alt=""></div>
+                        <h2>Ms. Lorem R. Ipsum</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>                    
+                    </div>
+
+                </div>
+
+            </div>
+<!--         </div> -->
+
 
 </section>
+
+
 
 
 
 <!--skill v section-->
-<section class="skills" id="skills">
+<section class="page__style skills" id="skills">
    <div class="heading">
-    <span>Technical and professional</span>
-    <h3>Skills</h3>
-   </div>
-   <div class="skill-main">
-    <div class="skill-left">
-        <h3>Technical skills</h3>
-        <div class="skill-bar">
-            <div class="info">
-                <p>html</p>
-                <p>85%</p>
-            </div>
-        <div class="bar">
-        <span class="html"></span>
-        </div>
-        </div>
-
-     
-           
-                <div class="skill-bar">
-                    <div class="info">
-                        <p>css</p>
-                        <p>80%</p>
-                    </div>
-                    <div class="bar">
-                        <span class="css"></span>
-                    </div>
-                </div>
-
-
-        <div class="skill-bar">
-            <div class="info">
-                <p>JavaScript</p>
-                <p>70%</p>
-            </div>
-            <div class="bar">
-                <span class="javascript"></span>
-            </div>
-        </div>
-
-      
-           
-                <div class="skill-bar">
-                    <div class="info">
-                        <p>python</p>
-                        <p>72%</p>
-                    </div>
-                    <div class="bar">
-                        <span class="python"></span>
-                    </div>
-                </div>
+    <h4>Technical and professional<span>Skills</span></h4>
     
-    </div>
+   </div>
 
+ 
 
-    <div class="skill-right">
-        <h3>professional SKill</h3>
-        <div class="professional">
-        <div class="box">
-            <div class="circle" data-dots="70" data-percent="75"> </div>
-            <div class="text">
-                <big>75</big>
-                <small>Team-Work</small>
-            </div>
+   <div class="svgsvgwrapper">  
+  <div class="grid">
+
+    <!-- SOFTWARE DEVELOPMENT -->
+
+    <div class="grid--cell">
+      <div class="animation-svgwrapper animation-svgwrapper--software-bg">
+
+        <div class="absolute software-monitor">
+
+          <!-- Monitor hardware + screen chrome/UI -->
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 300" class="absolute software-screen software-screen--bg">
+
+            <!-- Monitor feet -->
+            <g fill="#333">
+              <circle cx="80" cy="152" r="4" />
+              <circle cx="220" cy="152" r="4" />
+            </g>
+
+            <!-- Browser chrome BG -->
+            <path fill="#A6A6A6" d="M60 149.5c-1.38 0-2.5-1.12-2.5-2.5V19c0-1.38 1.12-2.5 2.5-2.5h180c1.38 0 2.5 1.12 2.5 2.5v128c0 1.38-1.12 2.5-2.5 2.5H60z" />
+
+            <!-- Monitor Bezel -->
+            <path fill="#333" d="M240 19v128H60V19h180m0-5H60c-2.76 0-5 2.24-5 5v128c0 2.76 2.24 5 5 5h180c2.76 0 5-2.24 5-5V19c0-2.76-2.24-5-5-5z" />
+
+            <!-- Browser page BG -->
+            <path fill="#E5E5E5" d="M60 26h180v116H60z" />
+
+            <!-- Sidebar BG -->
+            <path fill="#D1D1D1" d="M80 26h30v116H80z" />
+
+            <!-- Browser buttons -->
+            <path fill="#191919" d="M218 20h5v5h-5zm7.5 0h5v5h-5z" />
+
+            <!-- Line numbers -->
+            <path fill="#D60000" d="M233 20h5v5h-5zM96.02 26.33h-1.85c-1.02 0-1.84.82-1.84 1.84 0 1 .82 1.83 1.84 1.83h1.85c1.02 0 1.84-.82 1.84-1.83 0-1.02-.82-1.84-1.84-1.84zm0 7.4h-1.85c-1.02 0-1.84.83-1.84 1.84 0 1 .82 1.83 1.84 1.83h1.85c1.02 0 1.84-.82 1.84-1.83 0-1.02-.82-1.84-1.84-1.84zm0 7.4h-1.85c-1.02 0-1.84.83-1.84 1.84 0 1 .82 1.83 1.84 1.83h1.85c1.02 0 1.84-.82 1.84-1.83 0-1.02-.82-1.84-1.84-1.84zm0 7.4h-1.85c-1.02 0-1.84.82-1.84 1.84 0 1 .82 1.83 1.84 1.83h1.85c1.02 0 1.84-.82 1.84-1.83 0-1.02-.82-1.84-1.84-1.84zm0 7.47h-1.85c-1.02 0-1.84.82-1.84 1.83 0 1.02.82 1.84 1.84 1.84h1.85c1.02 0 1.84-.82 1.84-1.84 0-1-.82-1.83-1.84-1.83zm0 7.33h-1.85c-1.02 0-1.84.82-1.84 1.84 0 1 .82 1.83 1.84 1.83h1.85c1.02 0 1.84-.82 1.84-1.83 0-1.02-.82-1.84-1.84-1.84zm0 7.4h-1.85c-1.02 0-1.84.83-1.84 1.84 0 1 .82 1.83 1.84 1.83h1.85c1.02 0 1.84-.82 1.84-1.83 0-1-.82-1.84-1.84-1.84zm0 7.27h-1.85c-1.02 0-1.84.82-1.84 1.83 0 1.02.82 1.84 1.84 1.84h1.85c1.02 0 1.84-.82 1.84-1.84 0-1-.82-1.83-1.84-1.83zm0 7.53h-1.85c-1.02 0-1.84.82-1.84 1.84 0 1 .82 1.83 1.84 1.83h1.85c1.02 0 1.84-.82 1.84-1.83 0-1.02-.82-1.84-1.84-1.84zm0 7.4h-1.85c-1.02 0-1.84.82-1.84 1.84 0 1 .82 1.83 1.84 1.83h1.85c1.02 0 1.84-.82 1.84-1.83 0-1.02-.82-1.84-1.84-1.84zm0 7.4h-1.85c-1.02 0-1.84.82-1.84 1.84 0 1 .82 1.83 1.84 1.83h1.85c1.02 0 1.84-.82 1.84-1.83 0-1.02-.82-1.84-1.84-1.84zm0 7.4h-1.85c-1.02 0-1.84.83-1.84 1.84 0 1 .82 1.83 1.84 1.83h1.85c1.02 0 1.84-.82 1.84-1.83 0-1-.82-1.84-1.84-1.84zm0 7.27h-1.85c-1.02 0-1.84.82-1.84 1.83 0 1.02.82 1.84 1.84 1.84h1.85c1.02 0 1.84-.82 1.84-1.84 0-1-.82-1.83-1.84-1.83zm0 7.53h-1.85c-1.02 0-1.84.82-1.84 1.84 0 1 .82 1.83 1.84 1.83h1.85c1.02 0 1.84-.82 1.84-1.83 0-1.02-.82-1.84-1.84-1.84zm0 7.4h-1.85c-1.02 0-1.84.82-1.84 1.84 0 1 .82 1.83 1.84 1.83h1.85c1.02 0 1.84-.82 1.84-1.83 0-1.02-.82-1.84-1.84-1.84zm0 7.4h-1.85c-1.02 0-1.84.82-1.84 1.84 0 1 .82 1.83 1.84 1.83h1.85c1.02 0 1.84-.82 1.84-1.83 0-1.02-.82-1.84-1.84-1.84z"
+            />
+          </svg>
+
+          <!-- Monitor screen mask - Height is animated for R "code reveal" -->
+          <div class="absolute software-screen software-screen--fg-mask">
+
+            <!-- Monitor screen R graphic - Translates upwards for R "code scroll" -->
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 300" class="absolute software-screen software-screen--fg">
+              <path fill="#D60000" d="M130.02 33.73h-3.85c-1.02 0-1.84.83-1.84 1.84 0 1 .82 1.83 1.84 1.83h3.85c1.02 0 1.84-.82 1.84-1.83 0-1.02-.82-1.84-1.84-1.84zm18 0h-10.85c-1.02 0-1.84.83-1.84 1.84 0 1 .82 1.83 1.84 1.83h10.85c1.02 0 1.84-.82 1.84-1.83 0-1.02-.82-1.84-1.84-1.84zM170.02 41.13h-21.85c-1.02 0-1.84.83-1.84 1.84 0 1 .82 1.83 1.84 1.83h21.85c1.02 0 1.84-.82 1.84-1.83 0-1.02-.82-1.84-1.84-1.84zm-29 7.4h-14.85c-1.02 0-1.84.82-1.84 1.84 0 1 .82 1.83 1.84 1.83h14.85c1.02 0 1.84-.82 1.84-1.83 0-1.02-.82-1.84-1.84-1.84zM177.02 56h-6.85c-1.02 0-1.84.82-1.84 1.83 0 1.02.82 1.84 1.84 1.84h6.85c1.02 0 1.84-.82 1.84-1.84 0-1-.82-1.83-1.84-1.83zm1 7.33h-28.85c-1.02 0-1.84.82-1.84 1.84 0 1 .82 1.83 1.84 1.83h28.85c1.02 0 1.84-.82 1.84-1.83 0-1.02-.82-1.84-1.84-1.84zm-24 7.4h-13.85c-1.02 0-1.84.83-1.84 1.84 0 1 .82 1.83 1.84 1.83h13.85c1.02 0 1.84-.82 1.84-1.83 0-1-.82-1.84-1.84-1.84zM176.02 78h-9.85c-1.02 0-1.84.82-1.84 1.83 0 1.02.82 1.84 1.84 1.84h9.85c1.02 0 1.84-.82 1.84-1.84 0-1-.82-1.83-1.84-1.83zm-32 7.53h-17.85c-1.02 0-1.84.82-1.84 1.84 0 1 .82 1.83 1.84 1.83h17.85c1.02 0 1.84-.82 1.84-1.83 0-1.02-.82-1.84-1.84-1.84zM169.02 92.93h-29.85c-1.02 0-1.84.82-1.84 1.84 0 1 .82 1.83 1.84 1.83h29.85c1.02 0 1.84-.82 1.84-1.83 0-1.02-.82-1.84-1.84-1.84zM157.02 100.33h-2.85c-1.02 0-1.84.82-1.84 1.84 0 1 .82 1.83 1.84 1.83h2.85c1.02 0 1.84-.82 1.84-1.83 0-1.02-.82-1.84-1.84-1.84zm-16 7.4h-2.85c-1.02 0-1.84.83-1.84 1.84 0 1 .82 1.83 1.84 1.83h2.85c1.02 0 1.84-.82 1.84-1.83 0-1-.82-1.84-1.84-1.84zM168.02 115h-25.85c-1.02 0-1.84.82-1.84 1.83 0 1.02.82 1.84 1.84 1.84h25.85c1.02 0 1.84-.82 1.84-1.84 0-1-.82-1.83-1.84-1.83zM159.02 129.93h-6.85c-1.02 0-1.84.82-1.84 1.84 0 1 .82 1.83 1.84 1.83h6.85c1.02 0 1.84-.82 1.84-1.83 0-1.02-.82-1.84-1.84-1.84zm19 0h-11.85c-1.02 0-1.84.82-1.84 1.84 0 1 .82 1.83 1.84 1.83h11.85c1.02 0 1.84-.82 1.84-1.83 0-1.02-.82-1.84-1.84-1.84z"
+              />
+
+              <path fill="#bbb" d="M161.02 33.73h-5.85c-1.02 0-1.84.83-1.84 1.84 0 1 .82 1.83 1.84 1.83h5.85c1.02 0 1.84-.82 1.84-1.83 0-1.02-.82-1.84-1.84-1.84zm-20 7.4h-10.85c-1.02 0-1.84.83-1.84 1.84 0 1 .82 1.83 1.84 1.83h10.85c1.02 0 1.84-.82 1.84-1.83 0-1.02-.82-1.84-1.84-1.84zM159.02 48.53h-10.85c-1.02 0-1.84.82-1.84 1.84 0 1 .82 1.83 1.84 1.83h10.85c1.02 0 1.84-.82 1.84-1.83 0-1.02-.82-1.84-1.84-1.84zM159.02 78h-14.85c-1.02 0-1.84.82-1.84 1.83 0 1.02.82 1.84 1.84 1.84h14.85c1.02 0 1.84-.82 1.84-1.84 0-1-.82-1.83-1.84-1.83zM132.02 92.93h-5.85c-1.02 0-1.84.82-1.84 1.84 0 1 .82 1.83 1.84 1.83h5.85c1.02 0 1.84-.82 1.84-1.83 0-1.02-.82-1.84-1.84-1.84zM162.02 107.73h-13.85c-1.02 0-1.84.83-1.84 1.84 0 1 .82 1.83 1.84 1.83h13.85c1.02 0 1.84-.82 1.84-1.83 0-1-.82-1.84-1.84-1.84zM163.02 122.53h-15.85c-1.02 0-1.84.82-1.84 1.84 0 1 .82 1.83 1.84 1.83h15.85c1.02 0 1.84-.82 1.84-1.83 0-1.02-.82-1.84-1.84-1.84z"
+              />
+
+              <path fill="#888" d="M175.02 48.53h-8.85c-1.02 0-1.84.82-1.84 1.84 0 1 .82 1.83 1.84 1.83h8.85c1.02 0 1.84-.82 1.84-1.83 0-1.02-.82-1.84-1.84-1.84zm-12 7.47h-22.85c-1.02 0-1.84.82-1.84 1.83 0 1.02.82 1.84 1.84 1.84h22.85c1.02 0 1.84-.82 1.84-1.84 0-1-.82-1.83-1.84-1.83zM178.02 70.73h-16.85c-1.02 0-1.84.83-1.84 1.84 0 1 .82 1.83 1.84 1.83h16.85c1.02 0 1.84-.82 1.84-1.83 0-1-.82-1.84-1.84-1.84zm-41 7.27h-10.85c-1.02 0-1.84.82-1.84 1.83 0 1.02.82 1.84 1.84 1.84h10.85c1.02 0 1.84-.82 1.84-1.84 0-1-.82-1.83-1.84-1.83zM175.02 85.53h-22.85c-1.02 0-1.84.82-1.84 1.84 0 1 .82 1.83 1.84 1.83h22.85c1.02 0 1.84-.82 1.84-1.83 0-1.02-.82-1.84-1.84-1.84zM146.02 100.33h-11.85c-1.02 0-1.84.82-1.84 1.84 0 1 .82 1.83 1.84 1.83h11.85c1.02 0 1.84-.82 1.84-1.83 0-1.02-.82-1.84-1.84-1.84zM173.02 122.53h-2.85c-1.02 0-1.84.82-1.84 1.84 0 1 .82 1.83 1.84 1.83h2.85c1.02 0 1.84-.82 1.84-1.83 0-1.02-.82-1.84-1.84-1.84z"
+              />
+            </svg>
+          </div>
+
+          <!-- Monitor screen shine overlay -->
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 300" class="absolute software-screen software-screen--shine">
+            <linearGradient id="a" x1="195" x2="41" y1="-26" y2="128" gradientUnits="userSpaceOnUse">
+              <stop offset="0" stop-color="#FFF" stop-opacity=".75" />
+              <stop offset="1" stop-color="#FFF" stop-opacity="0" />
+            </linearGradient>
+            <linearGradient id="b" x1="244.5" x2="138.5" y1="45.5" y2="151.5" gradientUnits="userSpaceOnUse">
+              <stop offset="0" stop-color="#FFF" stop-opacity=".55" />
+              <stop offset="1" stop-color="#FFF" stop-opacity="0" />
+            </linearGradient>
+
+            <path fill="url(#a)" d="M240 19H60v128h52" />
+            <path fill="url(#b)" d="M240 59V41L134 147h18" />
+          </svg>
         </div>
 
-<div class="box">
-    <div class="circle" data-dots="70" data-percent="86"> </div>
-    <div class="text">
-        <big>86%</big>
-        <small>CreaTivity</small>
+        <!-- Keyboard -->
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 300" class="absolute software-keyboard">
+          <path fill="#E0E0E0" d="M70 166h160v58H70z" />
+          <g fill="#FFF">
+            <path d="M73 169h11v7H73zm13 0h11v7H86zm26 0h11v7h-11zm-13 0h11v7H99zm26 0h11v7h-11zm13 0h11v7h-11zm13 0h11v7h-11zm13 0h11v7h-11zm13 0h11v7h-11zm13 0h11v7h-11zm-98 9h11v7H92zm13 0h11v7h-11zm13 0h11v7h-11zm13 0h11v7h-11zm13 0h11v7h-11zm13 0h11v7h-11zm13 0h11v7h-11zm13 0h11v7h-11zm13 0h11v7h-11zm13 0h18v7h-18zm-123 9h11v7H86zm13 0h11v7H99zm13 0h11v7h-11zm13 0h11v7h-11zm13 0h11v7h-11zm13 0h11v7h-11zm13 0h11v7h-11zm13 0h11v7h-11zm13 0h11v7h-11zm-96 9h11v7H94zm13 0h11v7h-11zm13 0h11v7h-11zm13 0h11v7h-11zm13 0h11v7h-11zm13 0h11v7h-11zm13 0h11v7h-11zm13 0h11v7h-11zm13 0h11v7h-11zm-99 9h11v7H99zm13 0h11v7h-11zm13 0h11v7h-11zm13 0h11v7h-11zm13 0h11v7h-11zm13 0h11v7h-11zm13 0h11v7h-11zm13 0h11v7h-11zm13 0h24v7h-24zm-13 9h16v7h-16zm18 0h19v7h-19zm-5-27h11v7h-11zm0-18h11v7h-11zm13 0h11v7h-11zm-143 9h17v7H73zm0 9h11v7H73zm0 9h19v7H73zm0 9h24v7H73zm0 9h19v7H73zm21 0h16v7H94zm18 0h76v7h-76zM216 187v9h-5v7h16v-16"
+            />
+          </g>
+        </svg>
+
+        <!-- Left & right hands - Have to be done with DIV BG's as we need to animate the BG position for switching sprites -->
+        <div class="absolute software-hand software-hand--left"></div>
+        <div class="absolute software-hand software-hand--right"></div>
+      </div>
+
+      <h1 class="title title--software">Software Development</h1>
+      
+    </div>
+    <!-- WEBSITE DEVELOPMENT -->
+
+    <div class="grid--cell">
+      <div class="animation-svgwrapper animation-svgwrapper--website-bg">
+
+        <!-- Desktop screen -->
+        <div class="absolute web-hardware web-hardware--desktop">
+
+          <!-- Animated DIV BG for simple scrolling through site GFX -->
+          <div class="web-screen web-screen--website-desktop">
+            <div class="screen-shine"></div>
+          </div>
+        </div>
+
+        <!-- Mobile screen -->
+        <div class="absolute web-hardware web-hardware--mobile">
+
+          <!-- Animated DIV BG for simple scrolling through site GFX -->
+          <div class="web-screen web-screen--website-mobile">
+            <div class="screen-shine"></div>
+          </div>
+        </div>
+      </div>
+
+      <h1 class="title title--webdev">Website Development</h1>
     </div>
 
-</div>
+    <!-- WEBAPP DEVELOPMENT -->
 
+    <div class="grid--cell">
+      <div class="animation-svgwrapper animation-svgwrapper--webapp-bg">
 
-<div class="box">
-    <div class="circle" data-dots="70" data-percent="70"> </div>
-    <div class="text">
-        <big>70%</big>
-        <small>Communication</small>
+        <!-- Desktop screen -->
+        <div class="absolute web-hardware web-hardware--desktop">
 
+          <!-- Animated DIV BG for simple scrolling through site GFX -->
+          <div class="web-screen web-screen--webapp-desktop">
+
+            <!-- Screen shine set to DIV BG because background-size: cover is magical -->
+            <div class="screen-shine"></div>
+          </div>
+        </div>
+
+        <!-- Mobile screen -->
+        <div class="absolute web-hardware web-hardware--mobile">
+
+          <!-- Animated DIV BG for simple scrolling through site GFX -->
+          <div class="web-screen web-screen--webapp-mobile">
+
+            <!-- Screen shine set to DIV BG because background-size: cover is magical -->
+            <div class="screen-shine"></div>
+          </div>
+        </div>
+      </div>
+
+      <h1 class="title title--webapp">Webapp Development</h1>
     </div>
 
-</div>
+    <!-- WINDOWS DESKTOP APPLICATIONS -->
 
+    <div class="grid--cell">
+      <div class="animation-svgwrapper animation-svgwrapper--win-app-bg">
 
-<div class="box">
-    <div class="circle" data-dots="70" data-percent="50"> </div>
-    <div class="text">
-        <big>50%</big>
-        <small>Project-management</small>
+        <!-- Monitor and desktop chrome -->
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 300" class="absolute win-desktop">
 
+          <!-- Desktop colour -->
+          <path fill="#FCC000" d="M30 240c-2.76 0-5-2.24-5-5V65c0-2.76 2.24-5 5-5h240c2.76 0 5 2.24 5 5v170c0 2.76-2.24 5-5 5H30z" />
+
+          <!-- Device -->
+          <g fill="#333">
+            <circle cx="60" cy="245" r="10" />
+            <circle cx="240" cy="245" r="10" />
+            <path d="M270 65v170H30V65h240m0-10H30c-5.52 0-10 4.48-10 10v170c0 5.52 4.48 10 10 10h240c5.52 0 10-4.48 10-10V65c0-5.52-4.48-10-10-10z" />
+          </g>
+
+          <!-- Taskbar -->
+          <path fill="#E48109" d="M30 224h240v11H30z" />
+
+          <!-- Taskbar inactive buttons and systray -->
+          <path fill="#ED9E48" d="M91 226h40v7H91zm45 0h40v7h-40zm112 1h20v5h-20z" />
+
+          <!-- Desktop inactive shortcuts -->
+          <path fill="#F4D387" d="M40 105h20v20H40zm0 30h20v20H40zm0 30h20v20H40z" />
+
+          <g fill="#FFF">
+
+            <!-- Windows button -->
+            <path d="M32 226h3v3h-3zm0 4h3v3h-3zm4-4h3v3h-3zM36 230h3v3h-3z" />
+
+            <!-- Desktop wallpaper graphic -->
+            <path d="M210 142V85l-62 8.9V142m0 6v48.08l62 8.92v-57m-72-6V94.94l-48 7.2V142m0 6v39.86l48 7.2V148" opacity=".15" />
+          </g>
+        </svg>
+
+        <!-- App shortcuts -->
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 300" class="absolute win-desktop">
+
+          <!-- Desktop shortcut -->
+          <path fill="#F4D387" d="M40 75h20v20H40z" class="win-desktop--shortcut-icon-01" />
+
+          <!-- Taskbar shortcut button -->
+          <path fill="#ED9E48" d="M46 226h40v7H46z" class="win-desktop--shortcut-icon-02" />
+        </svg>
+
+        <!-- App window -->
+        <div class="win-desktop--window">
+
+          <!-- App chrome -->
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 300" class="absolute win-desktop win-desktop--app-window">
+            <path fill="#E48109" d="M50 72h200v143H50z" />
+            <path fill="#FFF" d="M50 91h200v117H50z" />
+            <path fill="#E5E5E5" d="M50 91h40v117H50z" />
+            <path fill="#CCC" d="M55 106.5h30v4H55zm0 10h30v4H55zm0 10h30v4H55zm0 10h30v4H55zm0 10h30v4H55zm0 10h30v4H55zm0 10h30v4H55zM50 81h200v10H50z" />
+            <path fill="#7F4506" d="M52 75h86v4H52z" />
+            <path fill="#7F4506" d="M232 73h7v7h-7zm-10 0h7v7h-7z" />
+
+            <!-- Close X button -->
+            <path d="M242 73h7v7h-7z" class="win-desktop--app-window--close-button" />
+
+            <!-- Sidebar link -->
+            <path fill="#CCC" d="M55 96.5h30v4H55z" class="win-desktop--app-link" />
+
+            <!-- In-app screen -->
+            <g fill="#E5E5E5" class="win-desktop-chrome">
+              <rect width="40" height="20" x="100" y="100" />
+              <rect width="40" height="20" x="150" y="100" />
+
+              <!-- Button 01 -->
+              <rect width="40" height="20" x="200" y="100" class="win-desktop--button win-desktop--button-01" />
+
+              <!-- Button 02 -->
+              <rect width="40" height="20" x="100" y="130" class="win-desktop--button win-desktop--button-02" />
+              <rect width="40" height="20" x="150" y="130" />
+              <rect width="40" height="20" x="200" y="130" />
+
+              <rect width="40" height="10" x="100" y="160" />
+              <rect width="90" height="10" x="150" y="160" />
+
+              <!-- Ok button-->
+              <rect width="40" height="10" x="200" y="180" class="win-desktop--button win-desktop--button-03" />
+            </g>
+          </svg>
+
+          <!-- Modal window -->
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 300" class="absolute win-desktop win-desktop-chrome--modal">
+
+            <!-- Modal BG -->
+            <path d="M50 81h200v127H50z" opacity=".7" />
+
+            <!-- Modal dialog -->
+            <path fill="#FFF" d="M100 114.5h100v70H100z" />
+            <path fill="#E5E5E5" d="M110 124h80v6h-80zm0 12h80v6h-80zm0 12h60v6h-60zm5 16h30v10h-30z" />
+
+            <!-- Modal button -->
+            <path d="M155 164h30v10h-30z" class="win-desktop--button win-desktop--modal-button" />
+          </svg>
+
+          <!-- Tick overlay -->
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 300" class="absolute win-desktop win-desktop--tick">
+            <rect width="200" height="127" x="50" y="81" fill="#FFF" opacity=".75" />
+            <circle cx="150" cy="145" r="35" fill="#91D329" />
+            <g fill="#FFF">
+              <rect width="40" height="10" x="135.3" y="140" transform="rotate(-45 155.307 145.005)" />
+              <rect width="25" height="10" x="126.89" y="145.3" transform="rotate(45 139.396 150.303)" />
+            </g>
+          </svg>
+        </div>
+
+        <!-- Mouse cursor -->
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 300" class="absolute win-desktop win-desktop--cursor">
+          <g stroke="#000" stroke-miterlimit="10">
+            <path d="M153.7 152.66l-7.2-7v10l2.45-.97 1.56 3.63 2.57-1-1.56-3.7z" opacity=".4" />
+            <path fill="#FFF" d="M153.7 149.66l-7.2-7v10l2.45-.97 1.56 3.63 2.57-1-1.56-3.7z" />
+          </g>
+        </svg>
+
+        <!-- Screen shine -->
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 300" class="absolute win-desktop">
+          <linearGradient id="a" x1="210" x2="21" y1="5" y2="194" gradientUnits="userSpaceOnUse">
+            <stop offset="0" stop-color="#FFF" stop-opacity=".5" />
+            <stop offset="1" stop-color="#FFF" stop-opacity="0" />
+          </linearGradient>
+          <linearGradient id="b" x1="272.22" x2="139.69" y1="90.22" y2="222.74" gradientUnits="userSpaceOnUse">
+            <stop offset="0" stop-color="#FFF" stop-opacity=".3" />
+            <stop offset="1" stop-color="#FFF" stop-opacity="0" />
+          </linearGradient>
+          <path fill="url(#a)" d="M270 65H30v138h69.68" />
+          <path fill="url(#b)" d="M270 111.9V88L129.95 213h23.95" />
+        </svg>
+      </div>
+
+      <h1 class="title title--win-app">Windows Desktop Applications</h1>
     </div>
 
+    <!-- WINDOWS MOBILE APPLICATIONS -->
+
+    <div class="grid--cell">
+      <div class="animation-svgwrapper animation-svgwrapper--win-mobile-app-bg">
+
+        <!-- Device BG -->
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 300" class="absolute win-mobile">
+          <path stroke="#000" stroke-width="10" stroke-miterlimit="10" d="M100 50h100v200H100z" stroke-linejoin="round" />
+          <path d="M100 50h100v200H100z" />
+          <path fill="#333" d="M134.28 143.18l32.53 32.53-5.6 5.7-32.5-32.5zm-8.48 8.48l26.86 26.87-5.65 5.66-26.8-26.9zm11.3-11.3l36.78-36.78 2.83 2.83-36.7 36.8zm5.67 5.64l45.25-45.24 2.83 2.83-45.25 45.2zm5.65 5.67l13.43-13.43 2.83 2.83-13.44 13.43zm5.66 5.65l18.38-18.38 2.83 2.83-18.4 18.38z"
+          />
+          <path fill="#7F807F" d="M122.13 146.9c.6.6.22.9-.23 1.35l-1.9 1.9-3.2 3.2c-.4.4-1.12-.44-1.22-.78-.1-.33.33-.6.53-.8l1.8-1.8-8.1-8.15-.8 3.3c-.3 1-1.4-.12-1.3-.78 0-.35.2-.76.3-1.1.2-1 .44-1.97.65-2.95.05-.4 1.07-1.6 1.44-1.2.26.2.5.4.7.7l3.3 3.3 5.4 5.4 1.96-2c.27-.3.68.1.88.3.1.1-.1-.1 0 0zm4.1-13.76c2.56 2.55 4.8 6.27 1.73 9.36-3.08 3.1-6.6.6-9.1-1.9-2.53-2.53-4.8-6.27-1.72-9.35 3.1-3.1 6.6-.6 9.1 1.9.82.8-.9-.9 0 0zm-1.35 1.56c-1.6-1.6-4.44-4.4-6.66-2.2-2.15 2.16.42 4.96 2 6.55 1.42 1.4 4 4.1 6.17 2.6 2.9-2 .2-5.2-1.6-6.95zm4-6.68c.62.62.72 1.16.07 1.8-.66.67-1.2.57-1.82-.06-.64-.64-.77-1.17-.1-1.84.67-.67 1.2-.54 1.84.1.18.18-.2-.2 0 0zm5.74 5.75c.63.63.74 1.17.1 1.82-.68.6-1.2.5-1.84-.1-.63-.7-.75-1.2-.1-1.9.67-.7 1.22-.6 1.84.1.2.1-.18-.2 0 0zm6.64-11c2.37 2.36 1.2 5.56-1.1 7.5-.66.55-2.4 1.9-3.33 1.4-.32-.18-.8-.57-.9-.93-.16-.47 1.06-.63 1.35-.74 2.23-.9 5.22-4.1 2.18-6.04-2.05-1.3-4 .88-5.35 2.22-.4.47-1.6-.64-1.1-1.1.2-.34.7-.7 1-.95.9-.88 1.5-2.13 1-3.36-.4-1.24-1.8-2.1-3.1-1.52-1.2.54-1.8 1.8-2.1 3-.05.25-.1 1.2-.53 1.04-.47-.2-.97-.8-.97-1.3-.05-2.3 2.6-5 4.8-5.1 1.46-.1 2.8 1 3.46 2.2.63 1.2.4 2.4-.2 3.5 1.5-1.2 3.64-1.4 5.05 0 .5.5-.32-.36 0 0zm6.72-11.37c2.55 2.55 4.8 6.27 1.72 9.36-3.08 3.08-6.6.6-9.1-1.9-2.53-2.54-4.8-6.28-1.72-9.35 3.1-3 6.6-.6 9.1 1.9zm-1.36 1.55c-1.6-1.6-4.44-4.4-6.65-2.2-2.16 2.16.42 4.97 2 6.56 1.4 1.4 4 4.1 6.16 2.7 2.93-2 .23-5.2-1.5-6.9-.54-.5.4.4 0 0z"
+          />
+        </svg>
+
+        <!-- Home screen -->
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 300" class="absolute win-mobile win-mobile--home">
+
+          <!-- BG -->
+          <path d="M100 50h100v200H100z" class="absolute win-mobile win-mobile--home-bg" />
+
+          <!-- 1st row -->
+          <g class="absolute win-mobile win-mobile--home-row-01">
+            <path fill="#0056A7" d="M100 61h32v32h-32zm0 34h66v32h-66z" />
+            <path fill="#7A3293" d="M100 129h32v32h-32z" />
+            <path fill="#399743" d="M100 163h15v15h-15zm17 0h15v15h-15zm-17 17h15v15h-15zm17 0h15v15h-15z" />
+            <path fill="#0056A7" d="M100 197h66v32h-66zm0 34h15v15h-15zm17 0h15v15h-15z" />
+          </g>
+
+          <!-- 2nd row -->
+          <g class="absolute win-mobile win-mobile--home-row-02">
+            <path fill="#7A3293" d="M134 61h32v32h-32z" />
+            <path d="M134 129h32v32h-32z" class="win-mobile--home-shortcut" />
+            <path fill="#0056A7" d="M134 163h32v32h-32zm0 68h15v15h-15zm17 0h15v15h-15z" />
+          </g>
+
+          <!-- 3rd row -->
+          <g class="absolute win-mobile win-mobile--home-row-03">
+            <path fill="#7A3293" d="M168 61h32v32h-32z" />
+            <path fill="#F57929" d="M168 95h32v32h-32z" />
+            <path fill="#0056A7" d="M168 163h32v32h-32zm0 34h32v32h-32zm0 34h32v15h-32z" />
+            <path fill="#399743" d="M168 129h15v15h-15zm17 0h15v15h-15zm-17 17h15v15h-15zm17 0h15v15h-15z" />
+          </g>
+        </svg>
+
+        <!-- Mobile app -->
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 300" class="absolute win-mobile win-mobile--app-01">
+          <!-- BG -->
+          <path d="M100 50h100v200H100z" class="win-mobile--app-01--bg" />
+
+          <!-- App screen 01 icons -->
+          <g class="absolute win-mobile win-mobile--app-01-icons">
+            <path d="M108 94h22v22h-22z" class="win-mobile--app-01--icons--shortcut-01" />
+            <path d="M108 184h22v22h-22z" class="win-mobile--app-01--icons--shortcut-02" />
+
+            <g fill="#fff" opacity="0.2">
+              <path d="M108 64h22v22h-22z" />
+              <path d="M138 64h54v7h-54z" />
+              <path d="M138 75h54v4h-54zM138 82h54v4h-54z" />
+
+              <path d="M138 94h54v7h-54z" />
+              <path d="M138 105h54v4h-54zM138 112h54v4h-54z" />
+
+              <path d="M108 124h22v22h-22z" />
+              <path d="M138 124h54v7h-54z" />
+              <path d="M138 135h54v4h-54zM138 142h54v4h-54z" />
+
+              <path d="M108 154h22v22h-22z" />
+              <path d="M138 154h54v7h-54z" />
+              <path d="M138 165h54v4h-54zM138 172h54v4h-54z" />
+
+              <path d="M138 184h54v7h-54z" />
+              <path d="M138 195h54v4h-54zM138 202h54v4h-54z" />
+
+              <path d="M108 214h22v22h-22z" />
+              <path d="M138 214h54v7h-54z" />
+              <path d="M138 225h54v4h-54z" />
+            </g>
+          </g>
+        </svg>
+
+        <!-- App screen 02 icons -->
+        <div class="absolute win-mobile win-mobile--app-02">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 300">
+            <rect width="100" height="200" x="100" y="50" fill="#000000" />
+            <g fill="#4D4D4D">
+              <rect width="22" height="22" x="139" y="64" />
+              <rect width="22" height="22" x="170" y="64" class="win-mobile--app-02--button_03" />
+              <rect width="22" height="22" x="108" y="64" />
+              <rect width="22" height="22" x="139" y="94" class="win-mobile--app-02--button_04" />
+              <rect width="22" height="22" x="170" y="94" />
+              <rect width="22" height="22" x="108" y="94" class="win-mobile--app-02--button_01" />
+              <rect width="22" height="22" x="139" y="124" />
+              <rect width="22" height="22" x="170" y="124" />
+              <rect width="22" height="22" x="108" y="124" />
+              <rect width="22" height="22" x="139" y="154" />
+              <rect width="22" height="22" x="170" y="154" />
+              <rect width="22" height="22" x="108" y="154" class="win-mobile--app-02--button_05" />
+              <rect width="22" height="22" x="139" y="184" class="win-mobile--app-02--button_02" />
+              <rect width="22" height="22" x="170" y="184" class="win-mobile--app-02--button_06" />
+              <rect width="22" height="22" x="108" y="184" />
+            </g>
+          </svg>
+        </div>
+
+        <!-- Device decoration -->
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 300" class="absolute win-mobile">
+          <path d="M100 50h100v11H100zm0 182h100v18H100z" />
+          <rect width="8" height="5" x="104" y="53" fill="#333" />
+          <rect width="8" height="5" x="188" y="53" fill="#333" />
+          <!-- Back button -->
+          <rect width="8" height="8" x="104" y="237" class="win-mobile--home-back" />
+          <rect width="8" height="8" x="188" y="237" fill="#333" />
+          <path fill="#FFF" d="M154 241v-4l-4 .74V241m0 1v3.26l4 .74v-4m-5-1v-3.17l-3 .6V241m0 1v2.57l3 .6V242" />
+        </svg>
+
+        <!-- Screen shine -->
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 300" class="absolute win-mobile">
+          <linearGradient id="a" x1="203.29" x2="97.8" y1="76.29" y2="181.78" gradientUnits="userSpaceOnUse">
+            <stop offset="0" stop-color="#FFF" stop-opacity=".3" />
+            <stop offset="1" stop-color="#FFF" stop-opacity="0" />
+          </linearGradient>
+          <linearGradient id="b" x1="175" x2="84.49" y1="25" y2="115.51" gradientUnits="userSpaceOnUse">
+            <stop offset="0" stop-color="#FFF" stop-opacity=".5" />
+            <stop offset="1" stop-color="#FFF" stop-opacity="0" />
+          </linearGradient>
+          <path fill="url(#a)" d="M100 162.26v21.72L200 96.9V73" />
+          <path fill="url(#b)" d="M100 50v81.02L200 50" />
+        </svg>
+      </div>
+
+      <h1 class="title title--win-mobile-app">Windows Mobile Applications</h1>
+    </div>
+  </div>
 </div>
 
-    </div>
-</div>
-</div>
+<div class="graph" id="graph"></div>
+
+
+
+
+  
+
+
 
 
 </section>
-
-
-
-
-
-
 
 
 
@@ -340,7 +772,8 @@
 
 
 <!--portfolio section-->
-<section class="portfolio" id="portfolio">
+
+<section class="page__style bg portfolio "  id="portfolio">
     <h2 class="heading">latest <span>project</span></h2>
 
     <div class="container404">
@@ -463,7 +896,7 @@
     </div> 
 
 </section>
-
+ 
 
 
 
@@ -473,7 +906,7 @@
 
 
 <!--contact section -->
-<section class="contact" id="contact">
+<section class="page__style contact" id="contact">
     <h2 class="heading">Contact <span>Me</span></h2>
 
     <div class="container" id="app">
@@ -501,8 +934,10 @@
 
 
 
-<!--footer-->
 
+
+
+<!--footer-->
 <footer id="wrap" class="footer">
     <p>Cc 2023 by Bodesx|All Right Reserve</p>
 	<footer id="lightings">
@@ -536,6 +971,8 @@
 <script src="error404.js"></script>
 <script src="script.js"var j = jQuery.noConflict();></script>
 <script src="wobb.js"></script>
+<script src="pagetransition.js"></script>
+<script src="canvas.js"></script>
 
 
 <!--footer script-->
