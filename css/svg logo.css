@@ -1644,3 +1644,48 @@
   height: 50%;
   background: #cac9cf;
 }
+ 
+
+/*static typing */
+.typing {
+	display: flex;
+  justify-content: center;
+	transition: all 1s linear;
+   animation-name:example;
+  animation-duration:60s;
+  animation-iteration-count:infinite;}
+  @keyframes example {
+  0%   {color: rgb(200,0,0);}
+  25%  {color: rgb(200,200,0);}
+  50%  {color: rgb(0,0,200);}
+  100% {color: rgb(0,200,0);}
+}
+.typewriter p {
+	overflow:hidden;white-space: nowrap; /* Keeps the content on a single line */
+  margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+  letter-spacing: .15em; /* Adjust as needed */
+ transition: all 1s linear;
+}
+.typing:hover p {
+  
+  border-right: .30em solid orange; /* The typwriter cursor */
+  
+  animation: 
+    typing 6.5s steps(150, end),
+    blink-caret .75s step-end infinite;
+	transition: all 1s linear;
+
+}
+
+/* The typing effect */
+@keyframes typing {
+  from { width: 0 }
+  to { width: 100% }
+}
+
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+  from, to { border-color: transparent }
+  50% { border-color: orange; }
+}
+

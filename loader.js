@@ -68,3 +68,8 @@ var output = ["CPU0 microcode updated early to revision 0x1b, date = 2014-05-29"
 "BIOS-e820: [mem 0x0000000040004000-0x0000000040004fff] reserved",
 "BIOS-e820: [mem 0x0000000040005000-0x00000000c9746fff] usable",
 "BIOS-e820: [mem 0x00000000c9747000-0x00000000c9d47fff] ACPI NVS",""];
+
+
+
+
+
