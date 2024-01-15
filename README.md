@@ -1,3 +1,2 @@
 ### Hi there my this is my portfolio website👋
-<h1>Hello World! I'm Bodesx</h1><a href="https://github.com/bodesx?tab=repositories" align="center"><p align="center"><img src="https://github-readme-stats.vercel.app/api/top-langs/?username=Bodesx-09&langs_count=100&layout=compact&show_icons=true&include_all_commits=true&count_private=true&custom_title=Programming+Langauges&bg_color=ffffff00&title_color=c9d1d9&border_color=262626&text_color=c9c5c5&border_radius=3" alt="Top languages" /><br/><br/><img src="https://github-profile-trophy.vercel.app/?username=ArnavK-09&no-bg=true&no-frame=false&theme=buddhism&margin-h=15&margin-w=15&column=3" alt="Trophies" /><br/><img alt="Activity" src="https://github-readme-activity-graph.vercel.app/graph?username=ArnavK-09&theme=github-compact" /></p></a><hr />
--->
+
