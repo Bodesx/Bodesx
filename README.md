@@ -2,7 +2,7 @@
 <!--
 <h2 align="center">
   Hello  World!
-  <img src="https://media.giphy.com/media/RbDKaczqWovIugyJmW/giphy.gif" width="28"">
+  <img src="https://media.giphy.com/media/hvRJCLFzcasrR4ia7z/giphy.gif" width="28">
 </h2>
 -->
 
@@ -23,7 +23,7 @@
 <!-- Intro  -->
 <h3 align="center">
         <samp>&gt; Hey There!, I am
-                <b><a target="_blank" href="bodesx.github.io/Bodesx/Bodesx">Bodesx</a></b>
+                <b><a target="_blank" href="http://bodesx.github.io/Bodesx/">Bode</a></b>
         </samp>
 </h3>
 
