@@ -1,4 +1,3 @@
-### Hi there my this is my portfolio website👋
 <!--
 <h2 align="center">
   Hello  World!
@@ -23,7 +22,7 @@
 <!-- Intro  -->
 <h3 align="center">
         <samp>&gt; Hey There!, I am
-                <b><a target="_blank" href="http://bodesx.github.io/Bodesx/">Bode</a></b>
+                <b><a target="_blank" href="http://bodesx.github.io/Bodesx/">Bode</a>👋</b>
         </samp>
 </h3>
 
