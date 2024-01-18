@@ -23,7 +23,7 @@
 <!-- Intro  -->
 <h3 align="center">
         <samp>&gt; Hey There!, I am
-                <b><a target="_blank" href="bodesx.github.io/Bodesx/">Bodesx</a></b>
+                <b><a target="_blank" href="bodesx.github.io/Bodesx/Bodesx">Bodesx</a></b>
         </samp>
 </h3>
 
