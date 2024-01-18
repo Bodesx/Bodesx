@@ -2,7 +2,7 @@
 <!--
 <h2 align="center">
   Hello  World!
-  <img src="https://media.giphy.com/media/RbDKaczqWovIugyJmW/giphy.gif" width="28">
+  <img src="https://media.giphy.com/media/RbDKaczqWovIugyJmW/giphy.gif">
 </h2>
 -->
 
