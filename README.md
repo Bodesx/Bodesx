@@ -41,10 +41,6 @@
 
  <a href="https://linkedin.com/in/lawanson-bode" target="_blank">
   <img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" alt="Bodesx"/>
- </a>
- <!-- <a href="https://dev.to/alsiam" target="_blank">
-  <img src="https://img.shields.io/badge/dev.to-0A0A0A?style=for-the-badge&logo=dev.to&logoColor=white" alt="bodesx" />
- </a> -->
  <a href="https://twitter.com/bodesx99" target="_blank">
   <img src="https://img.shields.io/badge/Twitter-1DA1F2?style=for-the-badge&logo=twitter&logoColor=white" />
  </a>
@@ -63,7 +59,7 @@
 <p>
  <img align="right" width="450" src="https://media.giphy.com/media/RbDKaczqWovIugyJmW/giphy.gif" alt="Coding gif" />
   
- ✌️ &emsp; Enjoy to do programming and sharing knowledge <br/><br/>
+ ✌️ &emsp; Love programming and sharing knowledge <br/><br/>
  ❤️ &emsp; Love to writing code and learning new features<br/><br/>
  📧 &emsp; Reach me anytime: bodesx101@gmail.com<br/><br/>
  💬 &emsp; Ask me about anything [here](https://github.com/bodesx/bodesx/issues)
@@ -124,11 +120,11 @@
 <br/>
 <div>
   <div align=center>
-    <a href="https://github.com/denvercoder1/github-readme-streak-stats" title="Go to Source">
-      <img align="left" width=390 src="https://streak-stats.demolab.com/?user=zumrudu-anka&theme=radical&border=7F3FBF&background=0D1117"" alt="zumrudu-anka" />
+    <a href="https://github.com/bodesx/github-readme-streak-stats" title="Go to Source">
+      <img align="left" width=390 src="https://streak-stats.demolab.com/?user=zumrudu-anka&theme=radical&border=7F3FBF&background=0D1117"" alt="bodesx" />
     </a>
-    <a href="https://github.com/anuraghazra/github-readme-stats" title="Go to Source">
-      <img align="right" width=390 src="https://github-readme-stats.vercel.app/api?username=zumrudu-anka&show_icons=true&theme=radical&border=7F3FBF&background=0D1117"" />
+    <a href="https://github.com/bodesx/github-readme-stats" title="Go to Source">
+      <img align="right" width=390 src="https://github-readme-stats.vercel.app/api?username=bodesx&show_icons=true&theme=radical&border=7F3FBF&background=0D1117"" />
     </a>
   </div>
   <br><br><br><br><br><br><br><br><br>
@@ -136,7 +132,12 @@
 
 <a> 
     <a href="https://github.com/bodesx"><img alt="Bodesxs Github Stats" src="https://Bodesx-github-readme-stats.vercel.app/api?username=bodesx&show_icons=true&count_private=true&theme=react&border_color=7F3FBF&bg_color=0D1117&title_color=F85D7F&icon_color=F8D866" height="192px" width="49.5%"/></a>
-  <a href="https://github.com/bodesx"><img alt="Bodesx's Top Languages" src="https://denvercoder1-github-readme-stats.vercel.app/api/top-langs/?username=alsiam&langs_count=8&layout=compact&theme=react&border_color=7F3FBF&bg_color=0D1117&title_color=F85D7F&icon_color=F8D866" height="192px" width="49.5%"/></a>
+  
+  <div align=center>
+    <a href="https://github.com/anuraghazra/github-readme-stats">
+      <img height=200 align="center" src="https://github-readme-stats.vercel.app/api/top-langs/?username=zumrudu-anka&hide=c%23,powershell,Mathematica,Ruby,Objective-C,Objective-C%2b%2b,Cuda&title_color=61dafb&text_color=ffffff&icon_color=61dafb&bg_color=20232a&langs_count=8&layout=compact&border_color=61dafb&hide_border=true&size_weight=0.5&count_weight=0.5" />
+    </a>
+  </div>
   <br/>
 </a>
 
