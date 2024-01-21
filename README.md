@@ -123,17 +123,15 @@
 <hr/>
 <br/>
 <div>
-<p align="left">
-  <a href="https://github.com/Bodesx">
-    <img  align="left" width=390 src="https://github-readme-streak-stats.herokuapp.com/?user=bodesx&theme=radical&border=7F3FBF&background=0D1117" alt="Bodesx's GitHub streak"/>
-  </a>
-</p>
-
-<p align="right">
-  <a href="https://github.com/Bodesx">
-    <img align="left" width=390 src="https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=bodesx&theme=radical" alt="Bodesx's GitHub Contribution"/>
-  </a>
-</p>
+  <div align=center>
+    <a href="https://github.com/denvercoder1/github-readme-streak-stats" title="Go to Source">
+      <img align="left" width=390 src="https://streak-stats.demolab.com/?user=zumrudu-anka&theme=radical&border=7F3FBF&background=0D1117"" alt="zumrudu-anka" />
+    </a>
+    <a href="https://github.com/anuraghazra/github-readme-stats" title="Go to Source">
+      <img align="right" width=390 src="https://github-readme-stats.vercel.app/api?username=zumrudu-anka&show_icons=true&theme=radical&border=7F3FBF&background=0D1117"" />
+    </a>
+  </div>
+  <br><br><br><br><br><br><br><br><br>
 <div>
 
 <a> 
