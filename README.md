@@ -71,7 +71,6 @@
 <br/>
 
 
-
 <hr>
 <h2 align="center">🔥 Languages & Frameworks & Tools & Abilities 🔥</h2>
 <br>
@@ -111,7 +110,7 @@
 
 <br/>
 
-<p align="left">
+<p align="center">
  <a> <img src="https://github-profile-trophy.vercel.app/?username=bodesx&theme=tokyonight"/></img></a>
 </p>
 
