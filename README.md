@@ -7,7 +7,7 @@
 
 
 <p align="center">
-  <a href="https://github.com/bodesx"><img src="https://readme-typing-svg.herokuapp.com/?lines=Self%20Taught%20Programmer;Front%20End%20Developer;1.5%2B%20years%20of%20coding%20experience;Always%20learning%20new%20things&center=true&width=380&height=45"></a>
+  <a href="https://github.com/bodesx"><img src="https://readme-typing-svg.herokuapp.com/?lines=Bio%20Computer%20Programmer;Front%20End%20Developer;1.5%2B%20years%20of%20coding%20experience;Always%20learning%20new%20things&center=true&width=380&height=45"></a>
 </p>
 
 
@@ -111,7 +111,7 @@
 
 <br/>
 
-<p align="center">
+<p align="left">
   <a src="https://github-profile-trophy.vercel.app/?username=ryo-ma&theme=tokyonight"/></a>
 </p>
 
@@ -134,8 +134,8 @@
     <a href="https://github.com/bodesx"><img alt="Bodesxs Github Stats" src="https://Bodesx-github-readme-stats.vercel.app/api?username=bodesx&show_icons=true&count_private=true&theme=react&border_color=7F3FBF&bg_color=0D1117&title_color=F85D7F&icon_color=F8D866" height="192px" width="49.5%"/></a>
   
   <div align=center>
-    <a href="https://github.com/anuraghazra/github-readme-stats">
-      <img height=200 align="center" src="https://github-readme-stats.vercel.app/api/top-langs/?username=zumrudu-anka&hide=c%23,powershell,Mathematica,Ruby,Objective-C,Objective-C%2b%2b,Cuda&title_color=61dafb&text_color=ffffff&icon_color=61dafb&bg_color=20232a&langs_count=8&layout=compact&border_color=61dafb&hide_border=true&size_weight=0.5&count_weight=0.5" />
+    <a href="https://github.com/bodesx/github-readme-stats">
+      <img height=200 align="center" src="https://github-readme-stats.vercel.app/api/top-langs/?username=bodesx&hide=c%23,powershell,Mathematica,Ruby,Objective-C,Objective-C%2b%2b,Cuda&title_color=61dafb&text_color=ffffff&icon_color=61dafb&bg_color=20232a&langs_count=8&layout=compact&border_color=61dafb&hide_border=true&size_weight=0.5&count_weight=0.5" />
     </a>
   </div>
   <br/>
