@@ -21,8 +21,8 @@
 
 <!-- Intro  -->
 <h3 align="center">
-        <samp>&gt; Hey There!, I am
-                <b><a target="_blank" href="http://bodesx.github.io/Bodesx/">Bode</a>👋</b>
+        <samp>&gt; Here is my Portfolio Website
+                <b><a target="_blank" href="http://bodesx.github.io/Bodesx/">@Bodesx</a>👋</b>
         </samp>
 </h3>
 
@@ -74,7 +74,7 @@
 <br/>
 <br/>
 
-## Use To Code
+
 
 <hr>
 <h2 align="center">🔥 Languages & Frameworks & Tools & Abilities 🔥</h2>
@@ -125,13 +125,13 @@
 
 <p align="center">
   <a href="https://github.com/Bodesx">
-    <img src="https://github-readme-streak-stats.herokuapp.com/?user=bodesx&theme=radical&border=7F3FBF&background=0D1117" alt="Bodesx's GitHub streak"/>
+    <img  align="left" width=390 src="https://github-readme-streak-stats.herokuapp.com/?user=bodesx&theme=radical&border=7F3FBF&background=0D1117" alt="Bodesx's GitHub streak"/>
   </a>
 </p>
 
 <p align="center">
   <a href="https://github.com/Bodesx">
-    <img src="https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=bodesx&theme=radical" alt="Bodesx's GitHub Contribution"/>
+    <img align="left" width=390 src="https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=bodesx&theme=radical" alt="Bodesx's GitHub Contribution"/>
   </a>
 </p>
 
