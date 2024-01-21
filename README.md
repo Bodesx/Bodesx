@@ -123,13 +123,13 @@
 <hr/>
 <br/>
 <div>
-<p align="center">
+<p align="left">
   <a href="https://github.com/Bodesx">
     <img  align="left" width=390 src="https://github-readme-streak-stats.herokuapp.com/?user=bodesx&theme=radical&border=7F3FBF&background=0D1117" alt="Bodesx's GitHub streak"/>
   </a>
 </p>
 
-<p align="center">
+<p align="right">
   <a href="https://github.com/Bodesx">
     <img align="left" width=390 src="https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=bodesx&theme=radical" alt="Bodesx's GitHub Contribution"/>
   </a>
