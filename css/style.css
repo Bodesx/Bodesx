@@ -37,7 +37,7 @@ body{
 }
 
 section{
-  min-height: 100vh;
+  min-height: 110vh;
   padding: 6rem 9% 2rem;
 }
 
@@ -314,7 +314,7 @@ home-content p{
   left: 0;
   right: 0;
   bottom: 0;
-  background: linear-gradient(45deg, transparent 3%, #01363a 3%, #026168 5%, #01c0eb47 5%);
+  background: linear-gradient(45deg, transparent 3%, #d8e8ea 3%, #97a8a8 5%, #91c0ca47 5%);
   text-shadow: -3px -3px 0px #F8F005, 3px 3px 0px #00E6F6;
   clip-path: var(--slice-0);
 }

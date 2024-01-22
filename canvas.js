@@ -115,11 +115,11 @@ var barcolors = [
   ],
   highlightcolor = '#FFF68F',
   lengendlabels = [
-    'P.management',
+    'management',
     'Adaptability',
     'Creativity',
-    'Communication',
-    ' Critical thinking',
+    'interaction',
+    'Technical',
     'Analytics',
   ],
   data = [15, 10, 20, 15, 20, 15]
