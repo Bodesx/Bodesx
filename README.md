@@ -8,8 +8,8 @@
 
 <p align="center">
   <a href="https://github.com/bodesx"><img src="https://readme-typing-svg.herokuapp.com/?lines=Bio%20Computer%20Programmer;Front%20End%20Developer;1.5%2B%20years%20of%20coding%20experience;Always%20learning%20new%20things&center=true&width=380&height=45"></a>
-</p<img src="https://user-images.githubusercontent.com/74038190/212284100-561aa473-3905-4a80-b561-0d28506553ee.gif" width="700">>
-
+</p>
+<img src="https://user-images.githubusercontent.com/74038190/212284100-561aa473-3905-4a80-b561-0d28506553ee.gif" width="700">
 
 
 <a href="https://komarev.com/ghpvc/?username=bodesx">
