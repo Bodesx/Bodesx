@@ -112,7 +112,7 @@
 <br/>
 
 <p align="center">
- <a> <img src=https://github-profile-trophy.vercel.app/?username=ryo-ma&row=6/></img></a>
+ <a> <img src=https://github-profile-trophy.vercel.app/?username=ryo-ma&column=-1&theme=tokyonight/></img></a>
 </p>
 
 <br/>
