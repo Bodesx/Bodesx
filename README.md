@@ -73,7 +73,7 @@
 
 
 <hr>
-<h2 align="center"># <img src="https://user-images.githubusercontent.com/74038190/213866269-5d00981c-7c98-46d7-8a8e-16f462f15227.gif" width="120" /> &nbsp; Cool Avatars for GitHub Profile &nbsp; <img src="https://user-images.githubusercontent.com/74038190/213866269-5d00981c-7c98-46d7-8a8e-16f462f15227.gif" width="120" />  Languages & Frameworks & Tools & Abilities # <img src="https://user-images.githubusercontent.com/74038190/213866269-5d00981c-7c98-46d7-8a8e-16f462f15227.gif" width="120" /> &nbsp; Cool Avatars for GitHub Profile &nbsp; <img src="https://user-images.githubusercontent.com/74038190/213866269-5d00981c-7c98-46d7-8a8e-16f462f15227.gif" width="120" /> [🔝](#--gifs-for-readme--)</h2>
+<h2 align="center"># <img src="https://user-images.githubusercontent.com/74038190/213866269-5d00981c-7c98-46d7-8a8e-16f462f15227.gif" width="120" />  Languages & Frameworks & Tools & Abilities # <img src="https://user-images.githubusercontent.com/74038190/213866269-5d00981c-7c98-46d7-8a8e-16f462f15227.gif" width="120" />
 <br>
 <p align="center">
   <code><img title="C" height="25" src="images/c.svg"></code>
