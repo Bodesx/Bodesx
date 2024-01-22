@@ -7,7 +7,12 @@
 
 
 <p align="center">
-  <a href="https://github.com/bodesx"><img src="https://readme-typing-svg.herokuapp.com/?lines=adaptable%20collaborative%20analytical;%20boy %20this;2.5%2B%20years%20of%20coding%20experience;Always%20learning%20new%20things&center=true&width=380&height=45"></a>
+  <h1 align="center">
+  <a href="https://git.io/typing-svg">
+    <img src="https://readme-typing-svg.herokuapp.com/?lines=Hello,+There!+👋;This+is+Osman+DURDAĞ....;Nice+to+meet+you!&center=true&size=30">
+  </a>
+</h1>
+  <a href="https://github.com/bodesx"></a>
   <img src="https://user-images.githubusercontent.com/74038190/212284100-561aa473-3905-4a80-b561-0d28506553ee.gif" width="700">
 </p>
 
