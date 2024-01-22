@@ -7,7 +7,13 @@
 
 
 <p align="center">
-  <a href="https://github.com/bodesx"><img src="https://readme-typing-svg.herokuapp.com/?lines=Bio%20Computer%20Programmer;Front%20End%20Developer;1.5%2B%20years%20of%20coding%20experience;Always%20learning%20new%20things&center=true&width=380&height=45"></a>
+  <h1 align="center">
+  <a href="https://git.io/typing-svg">
+    <img src="https://readme-typing-svg.herokuapp.com/?lines=Hello,+There!+👋;This+is+Lawanson+Bode....;Nice+to+meet+you!&center=true&size=30">
+  </a>
+      <img src="https://user-images.githubusercontent.com/74038190/212284100-561aa473-3905-4a80-b561-0d28506553ee.gif" width="700">
+</h1>
+
 </p>
 
 
@@ -22,7 +28,7 @@
 <!-- Intro  -->
 <h3 align="center">
         <samp>&gt; Here is my Portfolio Website
-                <b><a target="_blank" href="http://bodesx.github.io/Bodesx/">@Bodesx</a>👋</b>
+                <b><a target="_blank" href="http://bodesx.github.io/Bodesx/">@Bodesx</a><img src="https://github.com/Anmol-Baranwal/Cool-GIFs-For-GitHub/assets/74038190/94cc4424-9251-42ae-8782-92465d0a0043" width="75">&nbsp;</b>
         </samp>
 </h3>
 
@@ -72,7 +78,7 @@
 
 
 <hr>
-<h2 align="center">🔥 Languages & Frameworks & Tools & Abilities 🔥</h2>
+<h2 align="center"> <img src="https://user-images.githubusercontent.com/74038190/216122041-518ac897-8d92-4c6b-9b3f-ca01dcaf38ee.png" width="30" />  Languages & Frameworks & Tools & Abilities  <img src="https://user-images.githubusercontent.com/74038190/216122041-518ac897-8d92-4c6b-9b3f-ca01dcaf38ee.png" width="30" />
 <br>
 <p align="center">
   <code><img title="C" height="25" src="images/c.svg"></code>
@@ -111,7 +117,7 @@
 <br/>
 
 <p align="center">
- <a> <img src="https://github-profile-trophy.vercel.app/?username=bodesx&theme=tokyonight"/></img></a>
+ <a> <img src=https://github-profile-trophy.vercel.app/?username=bodesx&theme=tokyonight&column=-1/></img></a>
 </p>
 
 <br/>
