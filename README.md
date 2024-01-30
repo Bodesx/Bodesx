@@ -9,7 +9,7 @@
 <p align="center">
   <h1 align="center">
   <a href="https://git.io/typing-svg">
-    <img src="https://readme-typing-svg.herokuapp.com/?lines=Hello,+There!+👋;This+is+Lawanson+Bode....;Nice+to+meet+you!&center=true&size=30">
+    <img src="https://readme-typing-svg.herokuapp.com/?lines=Hello,+There!+👋;This+is+Lawanson+Bode;Nice+to+meet+you!&center=true&size=30">
   </a>
       <img src="https://user-images.githubusercontent.com/74038190/212284100-561aa473-3905-4a80-b561-0d28506553ee.gif" width="700">
 </h1>
@@ -19,11 +19,11 @@
 
 
 <a href="https://komarev.com/ghpvc/?username=bodesx">
-  <img align="right" src="https://komarev.com/ghpvc/?username=alsiam&label=Visitors&color=0e75b6&style=flat" alt="Profile visitor" />
+  <img align="right" src="https://komarev.com/ghpvc/?username=bodesx&label=Visitors&color=0e75b6&style=flat" alt="Profile visitor" />
 </a>
 
 
-[![wakatime](https://wakatime.com/badge/user/eebb3dd8-d9b2-40de-9b88-6fd6cac99dbc.svg)](https://wakatime.com/@eebb3dd8-d9b2-40de-9b88-6fd6cac99dbc)
+[![Bodesxtime](https://wakatime.com/badge/user/eebb3dd8-d9b2-40de-9b88-6fd6cac99dbc.svg)](https://wakatime.com/@eebb3dd8-d9b2-40de-9b88-6fd6cac99dbc)
 
 <!-- Intro  -->
 <h3 align="center">
@@ -66,9 +66,9 @@
  <img align="right" width="450" src="https://media.giphy.com/media/RbDKaczqWovIugyJmW/giphy.gif" alt="Coding gif" />
   
  ✌️ &emsp; Love programming and sharing knowledge <br/><br/>
- ❤️ &emsp; Love to writing code and learning new features<br/><br/>
+ ❤️ &emsp; Love learning new features<br/><br/>
  📧 &emsp; Reach me anytime: bodesx101@gmail.com<br/><br/>
- 💬 &emsp; Ask me about anything [here](https://github.com/bodesx/bodesx/issues)
+ 💬 &emsp; Ask me anything but don't be rude [here](https://github.com/bodesx/bodesx/issues)
 
 </p>
 
