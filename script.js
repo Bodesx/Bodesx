@@ -239,14 +239,15 @@ class TextScramble {
 // ——————————————————————————————————————————————————
 
 const phrases = [
-  'FullStack webDev',
-  'Biotechnology',
-  'Bio-informatics',
-  'Computer-science',
-  'web-development',
-  'I.T technician',
-  'Graphic designer',
-  'Data-analytics',
+  'FullStack WebDev',
+  'web-Development',
+  'I.T Specialist',
+  'Cyber-Security',
+  'Bio-Informatics',
+  'Computer-Science',
+  'Graphic Designer',
+  'Data-Analytics',
+  'Mobile Application',
 ]
 
 const el = document.querySelector('.text')
