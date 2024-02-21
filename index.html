@@ -63,7 +63,7 @@
  <script src ="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>          
    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.ripples/0.5.3/jquery.ripples.min.js"></script>
 
-   
+
    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-circle-progress/1.2.0/circle-progress.min.js"></script>
    
 
@@ -1112,19 +1112,19 @@
     <div class="container" id="app">
         <div class="contact-us" :class="{'open': formOpen}">
             <div class="button-copy" v-show="!formOpen" @click="formOpen = true">Contact</div>
-            <form @submit="cancel()">
+            <form @submit="cancel()"></form>
+              
     
-                    <form action="https://formsubmit.co/48249e798dbf696fc5663efb48a86f24" method="POST">
+                    <form action="https://api.web3forms.com/submit" method="POST">
                         <div class="input-box form-control">
+                           <input type="hidden" name="access_key" value="b9a2f404-651f-4e52-8515-2466443b1099">
                             <input type="text" name="name" placeholder="Name">
-                            <input type="text" name="email" placeholder="Email">
+                            <input type="email" name="email" placeholder="Email">
+                            <input number="number" name="number" placeholder="Mobile number">
+                            <input type="subject" name="subject" placeholder="Email subject">
                         </div>
-                        <div class="input-box form-control">
-                            <input number="text" name="number" placeholder="Mobile number">
-                            <input type="text" name="subject" placeholder="Email subject">
-                        </div>
-                        <textarea name="" id="" cols="30" rows="10" placeholder="Your message "class="input-box form-control"></textarea>
-                        <input type="submit" value="Send Message" class="btn">
+                        <textarea name="message" id="" cols="30" rows="10" placeholder="Your message "class="input-box form-control"></textarea>
+                        <button type="submit" value="Send Message" class="btn">Submit</button>
                         <div class="cancel"><span @click="cancel()">Cancel</span></div>
                         </form>
                         </div>
