@@ -28,7 +28,7 @@
 <!-- Intro  -->
 <h3 align="center">
         <samp>&gt; Here is my Portfolio Website
-                <b><a target="_blank" href="http://bodesx.github.io/Bodesx/">@Bodesx</a><img src="https://github.com/Anmol-Baranwal/Cool-GIFs-For-GitHub/assets/74038190/94cc4424-9251-42ae-8782-92465d0a0043" width="75">&nbsp;</b>
+                <b><a target="_blank" href="http://bodesx.github.io/Bodesx/">@Bodesx</a><img src="https://github.com/Anmol-Baranwal/Cool-GIFs-For-GitHub/assets/74038190/47eb2734-addb-46da-b4dd-5e1616cd3853" width="75">&nbsp;</b>
         </samp>
 </h3>
 
