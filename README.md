@@ -63,7 +63,9 @@
  # About me
  
 <p>
- <img align="right" width="450" src="https://media.giphy.com/media/RbDKaczqWovIugyJmW/giphy.gif" alt="Coding gif" />
+  <img src="https://user-images.githubusercontent.com/74038190/212750155-3ceddfbd-19d3-40a3-87af-8d329c8323c4.gif" width="450">
+<br><br>
+
   
  ✌️ &emsp; Love programming and sharing knowledge <br/><br/>
  ❤️ &emsp; Love learning new features<br/><br/>
