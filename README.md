@@ -68,10 +68,10 @@
 
 
   
- ✌️ &emsp; Love programming and sharing knowledge <br/><br/>
- ❤️ &emsp; Love learning new features<br/><br/>
- 📧 &emsp; Reach me anytime: bodesx101@gmail.com<br/><br/>
- 💬 &emsp; Ask me anything but don't be rude [here](https://github.com/bodesx/bodesx/issues)
+ ✌️ &emsp; Love programming and learning new things <br/><br/>
+ ❤️ &emsp; Love God family and me <br/><br/>
+ 📧 &emsp; Reach me on mail: bodesx101@gmail.com<br/><br/>
+ 💬 &emsp; lets solve some problems [here](https://github.com/bodesx/bodesx/issues)
 
 </p>
 
