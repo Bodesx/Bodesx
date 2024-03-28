@@ -63,12 +63,15 @@
  # About me
  
 <p>
- <img align="right" width="450" src="https://media.giphy.com/media/RbDKaczqWovIugyJmW/giphy.gif" alt="Coding gif" />
+<img src="https://user-images.githubusercontent.com/74038190/229223156-0cbdaba9-3128-4d8e-8719-b6b4cf741b67.gif" width="200">
+ <img align="right" width="400" src="https://user-images.githubusercontent.com/74038190/229223263-cf2e4b07-2615-4f87-9c38-e37600f8381a.gif">
+
+
   
- ✌️ &emsp; Love programming and sharing knowledge <br/><br/>
- ❤️ &emsp; Love learning new features<br/><br/>
- 📧 &emsp; Reach me anytime: bodesx101@gmail.com<br/><br/>
- 💬 &emsp; Ask me anything but don't be rude [here](https://github.com/bodesx/bodesx/issues)
+ ✌️ &emsp; Love programming and learning new things <br/><br/>
+ ❤️ &emsp; Love God family and me <br/><br/>
+ 📧 &emsp; Reach me on mail: bodesx101@gmail.com<br/><br/>
+ 💬 &emsp; lets solve some problems [here](https://github.com/bodesx/bodesx/issues)
 
 </p>
 
