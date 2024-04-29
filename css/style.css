@@ -434,7 +434,7 @@ home-content p{
   position: fixed;
    
   
-  background: var(--bg-color) url('https://img.freepik.com/free-photo/glitch-effect-black-background_53876-127199.jpg?w=1060&t=st=1700691595~exp=1700692195~hmac=11eebca9d4b453960be52a32a0e1c7bfac2b724de03e9c421ee06d413bbf0245') repeat 0 0;
+  background: var(--bg-color) url('') repeat 0 0;
   background-repeat: repeat;
   animation: bg-animation .2s infinite;
   opacity: .9;
