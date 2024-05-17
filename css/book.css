@@ -1,0 +1,151 @@
+* {
+  box-sizing: border-box;
+}
+
+
+
+.book {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 7.5in;
+  height: 10in;
+  -webkit-transform: scale(0.5) translate(-50%, -100%);
+          transform: scale(0.5) translate(-50%, -100%);
+  -webkit-perspective: 3000px;
+          perspective: 3000px;
+          z-index: 99;
+}
+
+.page {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  box-shadow: 0 0 2px 0px rgba(0, 0, 0, 0.3);
+  font-family: Tinos, monospace;
+  font-size: 14pt;
+  -webkit-transform: rotateY(0deg);
+          transform: rotateY(0deg);
+  -webkit-transform-origin: 0 center;
+          transform-origin: 0 center;
+  -webkit-transform-style: preserve-3d;
+          transform-style: preserve-3d;
+  transition: -webkit-transform ease 1s;
+  transition: transform ease 1s;
+  transition: transform ease 1s, -webkit-transform ease 1s;
+}
+.page .front, .page .back {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  padding: 1in 1.25in;
+  background: rgb(213, 212, 212);
+}
+.page .front > header, .page .back > header {
+  text-align: center;
+}
+.page .front > header h1, .page .front > header h2, .page .front > header h3, .page .front > header h4, .page .front > header h5, .page .front > header h6, .page .back > header h1, .page .back > header h2, .page .back > header h3, .page .back > header h4, .page .back > header h5, .page .back > header h6 {
+  margin-bottom: 24pt;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+.page .front > header p, .page .back > header p {
+  margin-bottom: 12pt;
+}
+.page .front > header p:last-of-type, .page .back > header p:last-of-type {
+  margin-bottom: 24pt;
+}
+.page .front section p, .page .back section p {
+  text-align: justify;
+}
+.page .front section p tab, .page .back section p tab {
+  margin-left: 12pt;
+}
+.page .front section figure img, .page .back section figure img {
+  width: 100%;
+  margin-bottom: 12pt;
+}
+.page .front section figure figcaption, .page .back section figure figcaption {
+  text-align: center;
+  margin-bottom: 12pt;
+}
+.page .front section table, .page .back section table {
+  border-collapse: collapse;
+  margin: 1em;
+  width: 94%;
+  border: 1px solid;
+}
+.page .front section table caption, .page .back section table caption {
+  margin-bottom: 12pt;
+}
+.page .front section table th, .page .back section table th {
+  border: 1px solid;
+  font-weight: normal;
+}
+.page .front section table td, .page .back section table td {
+  border: 1px solid;
+  height: 14pt;
+  text-align: center;
+}
+.page .front .pagenumber, .page .back .pagenumber {
+  position: absolute;
+  top: 10.5in;
+  left: 0;
+  right: 0;
+  text-align: center;
+}
+.page .front {
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.1) 3.3%, rgb(95, 92, 92) 10%);
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
+}
+.page .back {
+  background-image: linear-gradient(to left, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.1) 3.3%, rgb(98, 95, 95) 10%);
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
+  -webkit-transform: rotateY(180deg);
+          transform: rotateY(180deg);
+}
+.page.turned {
+  -webkit-transform: rotateY(-180deg);
+          transform: rotateY(-180deg);
+}
+
+#cover .front, #cover .back {
+  background: rgb(0, 28, 34);
+  color: #a96;
+  text-shadow: -1px -1px rgba(0, 0, 0, 0.9), 1px 1px rgba(255, 255, 255, 0.9);
+}
+#cover .front header, #cover .back header {
+  font-size: 48px;
+}
+
+#back .front, #back .back {
+  background: rgb(0, 28, 34);;
+}
+
+
+
+@media(max-width:1200px){
+ .book{
+     width: 4.5in;
+  height: 6in;
+ }
+ .page {
+ 
+  font-family: Tinos, monospace;
+  font-size: 6pt;
+}
+}
+
+@media(max-width:375px){
+    .graph{
+        padding:2rem 3%;
+    }
+
+}
+

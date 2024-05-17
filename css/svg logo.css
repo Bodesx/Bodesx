@@ -940,12 +940,18 @@
 /*svg circles*/
 #graph {
   display: inline-block;
- 
   height: 180px;
   margin: 0px;
   width: 350px;
    position: absolute;
   left: 0px;
+}
+
+@media(max-width:378px){
+    #graph{
+        display: none;
+    }
+
 }
 
 
