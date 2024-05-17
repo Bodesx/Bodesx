@@ -68,7 +68,7 @@
 
 
   
- ✌️ &emsp; Love programming and learning new things <br/><br/>
+ ✌️ &emsp; An I.T personnel with a programming skill also a biologist <br/><br/>
  ❤️ &emsp; Love God family and me <br/><br/>
  📧 &emsp; Reach me on mail: bodesx101@gmail.com<br/><br/>
  💬 &emsp; lets solve some problems [here](https://github.com/bodesx/bodesx/issues)
