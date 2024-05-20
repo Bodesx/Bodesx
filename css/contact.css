@@ -1,6 +1,13 @@
 .contact{
     backdrop-filter: blur(5px);
+     
 }
+
+.contact {
+  min-height: 160vh !important; 
+  padding: 6rem 9% 2rem;
+}
+
 
 
 .container {
@@ -11,7 +18,7 @@
 
 .contact-us {
     transition: all 0.3s ease;
-    background-color: #FFC145;
+    background-color: #1f1f1e;
     height: 134px;
     width: 134px;
     border-radius: 72px;
