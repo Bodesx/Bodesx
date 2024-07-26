@@ -17,7 +17,7 @@
 :root{
     --bg-color:#111;
     --second-bg-color:#323946;
-    --text-color:#fff;
+    --text-color:#ffffff;
     --main-color:#0ef;
 
 }
@@ -37,7 +37,7 @@ body{
 }
 
 section{
-  min-height: 105vh;
+  min-height: 110vh;
   padding: 6rem 9% 2rem;
 }
 
