@@ -27,7 +27,7 @@
 
 <!-- Intro  -->
 <h3 align="center">
-        <samp>&gt; Here is my Portfolio Website
+        <samp>&gt; Visit my Portfolio Website
                 <b><a target="_blank" href="http://bodesx.github.io/Bodesx/">@Bodesx</a><img src="https://github.com/Anmol-Baranwal/Cool-GIFs-For-GitHub/assets/74038190/47eb2734-addb-46da-b4dd-5e1616cd3853" width="75">&nbsp;</b>
         </samp>
 </h3>
@@ -37,7 +37,7 @@
   <samp>
     <a href="https://www.google.com/search?q=Lawanson+Bode">「 Google Me 」</a>
     <br>
-    A Techy
+    I.T Enthusiasts
     <br>
     <br>
   </samp>
@@ -68,7 +68,7 @@
 
 
   
- ✌️ &emsp; An I.T personnel with a programming skill also a biologist <br/><br/>
+ ✌️ &emsp; An I.T personnel, loves programming / bioinformatics <br/><br/>
  ❤️ &emsp; Love God family and me <br/><br/>
  📧 &emsp; Reach me on mail: bodesx101@gmail.com<br/><br/>
  💬 &emsp; lets solve some problems [here](https://github.com/bodesx/bodesx/issues)
