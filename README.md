@@ -129,7 +129,7 @@
 <div>
   <div align=center>
     <a href="https://github.com/bodesx/github-readme-streak-stats" title="Go to Source">
-      <img align="left" width=390 src=" https://user-images.githubusercontent.com/74038190/214375120-7b484054-1907-4c4d-96d9-eb76cd91ee49.gif" width="300"" alt="bodesx" />
+      <img align="left" width=390 src="https://user-images.githubusercontent.com/74038190/216656996-3949e8a6-24c0-4bdb-a78d-6b348bde0fcb.gif" width="160"  alt="bodesx" />
     </a>
     <a href="https://github.com/bodesx/github-readme-stats" title="Go to Source">
       <img align="right" width=390 src="https://github-readme-stats.vercel.app/api?username=bodesx&show_icons=true&theme=radical&border=7F3FBF&background=0D1117"" />
