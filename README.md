@@ -37,7 +37,7 @@
   <samp>
     <a href="https://www.google.com/search?q=Lawanson+Bode">「 Google Me 」</a>
     <br>
-    I.T Enthusiasts
+    Technocrate
     <br>
     <br>
   </samp>
