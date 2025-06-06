@@ -161,6 +161,27 @@ label {
 }
 
 
+.letter {
+    
+    font-weight: bold;
+    transition: all 0.5s;
+    -webkit-text-stroke: 4px #d6f4f4;
+    font-variation-settings: "wght" 900, "ital" 1;
+    color: transparent;
+    font-family: "Meta", sans-serif;
+    text-shadow: 10px 10px 0px #07bccc,
+    
+    
+      25px 25px 0px #f40468,
+      45px 45px 10px #482896;
+    cursor: pointer;
+    
+}
+
+.letter:hover {
+    font-variation-settings: "wght" 100, "ital" 0;
+    text-shadow: none;
+  }
 
 
 
