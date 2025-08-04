@@ -169,11 +169,7 @@ label {
     font-variation-settings: "wght" 900, "ital" 1;
     color: transparent;
     font-family: "Meta", sans-serif;
-    text-shadow: 10px 10px 0px #07bccc,
-    
-    
-      25px 25px 0px #f40468,
-      45px 45px 10px #482896;
+    text-shadow: 10px 10px 0px #07bccc;
     cursor: pointer;
     
 }

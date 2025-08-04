@@ -57,7 +57,7 @@
     --surface: #111;
       --c: white;
     --c2: #9ae3dc;
-    --c3: magenta;
+    --c3: rgb(0, 255, 26);
   }
   
   .ai-bot {
