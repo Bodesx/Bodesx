@@ -108,6 +108,7 @@ section{
     display: flex;
     justify-content: center;
     align-items: center;
+    
 }
 
 
@@ -922,7 +923,7 @@ section{
     }
     .home-content h1{
         font-size: 8rem;
-        margin-top: -13%;
+        margin-top: 9%;
     }
     .home-img img{
         width:140vw;
