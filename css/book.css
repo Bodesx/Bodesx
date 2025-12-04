@@ -116,7 +116,7 @@
 }
 
 #cover .front, #cover .back {
-  background: rgb(0, 28, 34);
+  background-image:url(https://images.pexels.com/photos/11273814/pexels-photo-11273814.jpeg);
   color: #a96;
   text-shadow: -1px -1px rgba(0, 0, 0, 0.9), 1px 1px rgba(255, 255, 255, 0.9);
 }
@@ -125,7 +125,7 @@
 }
 
 #back .front, #back .back {
-  background: rgb(0, 28, 34);;
+  background-image:url(https://images.pexels.com/photos/11273814/pexels-photo-11273814.jpeg);
 }
 
 
