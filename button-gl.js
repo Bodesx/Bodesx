@@ -55,7 +55,7 @@ proceedBtn.addEventListener("click", () => {
 
 document.querySelector('[data-action="Proceed"]').addEventListener("click", () => {
     const link = document.createElement("a");
-    link.href = "./doucument/LawansonOlubodeResume-C.pdf"; // your file
+    link.href = "./doucument/LawansonOlubodeResume C.pdf"; // your file
     link.download = "LawansonOlubodeResume.pdf"; // name to save as
     document.body.appendChild(link);
     link.click();
