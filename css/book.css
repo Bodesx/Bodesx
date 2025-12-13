@@ -153,3 +153,658 @@
    width: 180px;
     height: 300px;
 }
+
+
+
+
+
+
+
+
+
+
+
+/*portfolio front*/
+
+
+
+
+.gif1 {
+    filter: brightness(0.9)contrast(90%);
+}
+
+.gif1:hover {
+    filter: brightness(0.7)contrast(110%);
+    transition: 1s;
+    }
+
+
+
+    /*portfolio inside*/
+
+ 
+  @import url('https://fonts.googleapis.com/css2?family=Lancelot&family=New+Amsterdam&family=Playfair+Display+SC:ital,wght@0,400;0,700;0,900;1,400;1,700,1,900&family=Playfair+Display:ital,wght@0,400..900;1,300..900&family=Rubik:ital,wght@0,300..900;1,300..900&family=Tauri&display=swap');
+  @import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&display=swap');
+
+  @font-face {
+    font-family: "Serial";
+    src: url('https://files.jcink.net/uploads2/lamorehaidenti/Serial_Alternates.otf');
+  }
+
+  @font-face {
+    font-family: "Lordish";
+    src: url('https://files.jcink.net/uploads2/lamorehaidenti/Lordish_Regular.ttf');
+  }
+
+  /* ------------------------- CONTAINER ------------------------- */
+  .isaaccont {
+    position: relative;
+    margin: auto;
+    left: 200px;
+    width: 558px;
+    height: 400px;
+    top: 20px;
+  }
+
+  /* ------------------------- BOX TESTO PRINCIPALE ------------------------- */
+  .isaacbox {
+    position: absolute;
+    top: 70px;
+    left: -230px;
+    width: 230px;
+    min-height: 300px;
+    transform: rotate(-3deg);
+    color: #999;
+    text-align: justify;
+    font-family: 'Merriweather', serif;
+    font-size: 9px;
+    line-height: 14px;
+    letter-spacing: 0.1px;
+    padding: 14px 16px;
+    box-sizing: border-box;
+    z-index: 3;
+    background: transparent;
+    border: none;
+  }
+
+  .isaacbox::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background-color: rgba(9, 10, 9, 0.5);
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.9);
+    z-index: -2;
+  }
+
+  .isaacbox::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    z-index: -1;
+    background-image:
+      linear-gradient(#000, #605046),
+      linear-gradient(90deg, #605046, #000);
+    background-repeat: no-repeat;
+    background-size: 3px 100%, 100% 3px;
+    background-position: left top, left bottom;
+    filter: brightness(1.2) contrast(1.4);
+  }
+
+  /* ------------------------- TESTO INTERNO SCORREVOLE ------------------------- */
+  .isaactesto {
+    width: 100%;
+    height: 265px;
+    overflow: auto;
+    scrollbar-width: none;
+  }
+
+  .isaactesto::-webkit-scrollbar {
+    display: none;
+  }
+
+  /* ------------------------- STILI TIPOGRAFICI ------------------------- */
+  uno {
+    font-family: "Tauri", sans-serif;
+    text-transform: uppercase;
+    font-size: 9px;
+    font-weight: 400;
+    color: rgba(96, 80, 70, 0.9);
+    letter-spacing: 1px;
+    line-height: 10.5px;
+  }
+
+  due {
+    font-style: italic;
+    font-size: 9px;
+    font-weight: 100;
+    color: rgba(188, 188, 188, 0.85);
+    letter-spacing: 0.4px;
+    line-height: 10.5px;
+    background: rgba(96, 80, 70, 0.55);
+    padding-left: 11px;
+  }
+
+  tre {
+    font-family: 'Rubik', sans-serif;
+    font-style: italic;
+    font-size: 10px;
+    line-height: 9px;
+    font-weight: 400;
+    color: rgba(188, 188, 188, 0.9);
+  }
+
+  quattro {
+    font-family: Georgia, serif;
+    font-size: 10px;
+    line-height: 9px;
+    letter-spacing: 0.8px;
+    font-weight: 500;
+    color: #605046;
+    font-style: italic;
+  }
+
+  /* ------------------------- IMMAGINE RETTANGOLARE ------------------------- */
+  .imgisaac {
+    position: absolute;
+    padding: 0;
+    margin-left: -120px;
+    margin-top: 20px;
+    width: 400px;
+    height: 320px;
+    overflow: hidden;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.8);
+    background: transparent;
+  }
+
+  /* ------- Doppio bordo stile isaacbox, lato destro + alto ------- */
+  .imgisaac::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    pointer-events: none;
+    background-image:
+      linear-gradient(#605046, #000),
+      linear-gradient(90deg, #000, #605046);
+    background-repeat: no-repeat;
+    background-size:
+      2px 100%,
+      100% 2px;
+    background-position:
+      right top,
+      right top;
+    filter: brightness(1.2) contrast(1.4);
+  }
+
+  #imgisaac {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transform: scaleX(1);
+    margin: 0;
+    padding: 0;
+  }
+
+  /* ------- SCRITTONA -------- */
+  .isaactitle {
+    position: absolute;
+    top: 300px;
+    left: 160px;
+    text-align: left;
+    pointer-events: none;
+    z-index: 10;
+  }
+
+  .isaactitle-small {
+    display: block;
+    font-family: Lordish, 'Meiland Gorgeous', serif;
+    font-size: 26px;
+    letter-spacing: 5px;
+    font-variant-ligatures: none;
+    text-transform: lowercase;
+    color: #605046;
+    text-shadow:
+      1px 1px 2px #000,
+      0 0 4px #000;
+    margin-bottom: -10px;
+  }
+
+  .isaactitle-big {
+    display: block;
+    font-family: Lordish, 'Meiland Gorgeous', serif;
+    font-size: 65px;
+    line-height: 42px;
+    color: #605046;
+    text-shadow:
+      2px 2px 3px #000,
+      0 0 8px #000;
+  }
+
+  /* ------- MINI GIFS -------- */
+  .isaacgifs {
+    position: absolute;
+    right: 150px;
+    top: 25px;
+    width: 120px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    z-index: 5;
+  }
+
+  .isaacgif {
+    width: 75%;
+    height: 75%;
+    background: transparent;
+    border: 3px solid rgba(9, 10, 9, 0.5);
+    box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.7);
+    overflow: hidden;
+  }
+
+  .isaacgif img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+ /*portfolio inside*/
+
+
+.flat-anim
+{
+	display: block;
+	width: 264px;
+	height: 265px;
+	background-color: #ecf0f1;
+	border-radius: 42px;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	margin:-132px 0 0 -132px;
+}
+.flat-anim:before
+{
+	content: "";
+	background-color: #e67e22;
+	width: 26px;
+	height: 26px;
+	border-radius: 26px;
+	position: absolute;
+	top: 19px;
+	left: 19px;
+}
+.flat-anim:after
+{
+	content: "";
+	background-color: #68b5f1;
+	width: 48px;
+	height: 24px;
+	border-radius: 10px;
+	position: absolute;
+	top: 17px;
+	right: 22px;
+}
+.bottom
+{
+	width: 264px;
+	height: 112px;
+	display: block;
+	z-index: 10;
+	background-color: #e67e22;
+	border-radius: 0 0 38px 38px;
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	border-top:15px solid #dd660e;
+	-webkit-box-shadow: inset 0 -20px 0 0 #db640e;
+}
+.bottom:before
+{
+	content: "";
+	background-color: #282e3a;
+	width: 140px;
+	height: 30px;
+	display: block;
+	margin:14px auto 0 auto;
+}
+.bottom:after{
+	content: "";
+	position: absolute;
+	top: 30px;
+	left: 84px;
+	width: 96px;
+	height: 70px;
+	display: block;
+	background-color: #ecf0f1;
+	/*border-top:16px solid #c3d1dd;*/
+	/*border-bottom:14px solid #db640e;*/
+  -webkit-box-shadow:0 14px 0 0 #db640e,
+    0 -16px 0 0 #c3d1dd;
+  -moz-box-shadow:0 14px 0 0 #db640e,
+    0 -16px 0 0 #c3d1dd;
+	box-shadow:0 14px 0 0 #db640e,
+    0 -16px 0 0 #c3d1dd;
+}
+.eye
+{
+	width: 37px;
+	height: 37px;
+	border-radius: 37px;
+	background-color: #243e6e;
+	display: block;
+	margin:60px auto 0;
+	z-index: 20;
+	position: relative;
+	-webkit-box-shadow:	0	0		0	22px	#3e5489,
+						0 	0 		0 	30px 	#1c3666,
+						0 	0 		0 	45px 	#ecf0f1,
+						0 	10px 	0 	45px 	rgba(0,0,0,0.2);
+}
+.eye:before
+{
+	content: "";
+	background-color: #a3bfd5;
+	width: 30px;
+	height: 30px;
+	border-radius: 30px;
+	position: absolute;
+	top: -16px;
+	left: -16px;
+}
+.eye:after
+{
+	content: "";
+	background-color: #6078a3;
+	width: 16px;
+	height: 16px;
+	border-radius: 16px;
+	position: absolute;
+	top: 30px;
+	left: 30px;
+}
+/* Animation */
+
+.flat-anim {
+  -webkit-animation: flatAnimation 5s infinite;
+}
+
+@-webkit-keyframes flatAnimation {
+  0% {
+	  -webkit-transform: rotate(50deg) scale(0.5); 
+  }
+  13% {
+	  -webkit-transform: rotate(-22deg) scale(1.2); 
+  }
+  20% {
+	  -webkit-transform: rotate(0) scale(1); 
+  }
+  95% {
+	  -webkit-transform: rotate(0) scale(1); 
+  }
+  100% {
+	  -webkit-transform: rotate(50deg) scale(0.5); 
+  }
+}
+.eye,
+.flat-anim:before,
+.flat-anim:after {
+  -webkit-animation: eyeAnimation 5s infinite;
+}
+.flat-anim:before{
+    -webkit-animation-delay: 50ms;
+    -moz-animation-delay: 50ms;
+    -o-animation-delay: 50ms;
+    animation-delay: 50ms;
+}
+.flat-anim:after{
+    -webkit-animation-delay: 150ms;
+    -moz-animation-delay: 150ms;
+    -o-animation-delay: 150ms;
+    animation-delay: 150ms;
+}
+
+@-webkit-keyframes eyeAnimation {
+  0% {
+	  opacity: 0;
+	  -webkit-transform: scale(0.1); 
+  }
+  12% {
+	  opacity: 0;
+	  -webkit-transform: scale(0.1);
+  }
+  13% {
+	  opacity: 1;
+	  -webkit-transform: scale(0.1);
+  }
+  20% {
+	  opacity: 1;
+	  -webkit-transform: scale(1.4); 
+  }
+  25% {
+	  -webkit-transform: scale(1); 
+  }
+  95% {
+	  -webkit-transform: scale(1); 
+	  opacity: 1;
+  }
+  100% {
+	  opacity: 0;
+	  -webkit-transform: scale(0.1); 
+  }
+}
+
+.bottom:before
+{
+  -webkit-animation: bottomAnimation 5s infinite;
+}
+
+@-webkit-keyframes bottomAnimation {
+  0% {
+	  opacity: 0;
+      width: 0;
+  }
+  20% {
+	  opacity: 0;
+      width: 0;
+  }
+  21% {
+	  opacity: 0;
+      width: 0;
+  }
+  22% {
+	  opacity: 1;
+      width: 8px;
+  }
+  25% {
+	  opacity: 1;
+  	  width: 165px;
+  }
+  26% {
+	  opacity: 1;
+  	  width: 140px;
+  }
+  95% {
+  	  width: 140px;
+	  opacity: 1;
+  }
+  96% {
+	  opacity: 0;
+      width: 0;
+  }
+  100% {
+	  opacity: 0;
+      width: 0;
+  }
+}
+.bottom:after
+{
+  -webkit-animation: bottomAfterAnimation 5s infinite;
+}
+
+@-webkit-keyframes bottomAfterAnimation {
+  0% {
+	  opacity: 0;
+      height: 0;
+      border: 0;
+  }
+  25% {
+	  opacity: 0;
+      height: 0;
+      border: 0;
+  }
+  26% {
+	  opacity: 1;
+      border: 0;
+      height: 0;
+  }
+  26% {
+	  opacity: 1;
+      border: 0;
+      height: 0;
+      border-top-width: 2px;
+  }
+  28% {
+	  opacity: 1;
+      border: 0;
+      height: 0;
+      border-top-width: 16px;
+  }
+  28% {
+	  opacity: 1;
+      height: 40px;
+      border-top-width: 16px;
+      border-bottom-width: 14px;
+  }
+  95% {
+	  opacity: 1;
+      height: 40px;
+      border-top-width: 16px;
+      border-bottom-width: 14px;
+  }
+  100% {
+	  opacity: 0;
+	  height: 0;
+    border: 0;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ /*portfolio inside*/
+  @import url('https://fonts.googleapis.com/css2?family=Rubik+Glitch&display=swap');
+  @import url('https://fonts.cdnfonts.com/css/jenkine?styles=169178');
+  @import url('https://fonts.googleapis.com/css2?family=Lacquer&display=swap');
+  @import url('https://fonts.googleapis.com/css2?family=Lancelot&display=swap');
+
+
+
+  .background-image {
+    width: 720px;
+    height: 600px;
+    margin: auto;
+    background-image: url('https://imgur.com/JAZaCRi.png');
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: relative;
+    filter: contrast(105%) brightness(95%);
+    padding: 5px;
+    box-sizing: border-box;
+  }
+
+  .jack-box {
+    width: 180px;
+    max-height: 240px;
+    overflow-y: scroll;
+    margin-top: 225px;
+    margin-left: 45px;
+    position: absolute;
+    background-color: transparent;
+    font-family: Tahoma, sans-serif;
+    font-size: 11px;
+    line-height: 12px;
+    letter-spacing: 0.1px;
+    color: #202020;
+    text-align: justify;
+    z-index: 1;
+  }
+
+  .jack-titolo {
+    width: 180px;
+    margin-top: 208px;
+    margin-left: 45px;
+    position: absolute;
+    background-color: transparent;
+    font-family: Tahoma, sans-serif;
+    font-size: 11px;
+    line-height: 12px;
+    letter-spacing: 0.1px;
+    color: #202020;
+    text-align: justify;
+    z-index: 1;
+  }
+
+  n {
+    font-family: Tahoma, serif;
+    color: #634a2a;
+    font-size: 11px;
+    line-height: 9px;
+    letter-spacing: 0.5px;
+    text-shadow: #000;
+    box-shadow: inset 0px -2px 0px rgb(160, 136, 104, 0.9);
+    border-radius: 30% 80%;
+  }
+
+  o {
+    font-family: "Lancelot", serif;
+    font-size: 14px;
+    font-weight: 500;
+    color: #634a2a;
+    line-height: 10px;
+    font-style: italic;
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

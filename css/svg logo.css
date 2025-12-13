@@ -6,6 +6,7 @@
   width: 100%;
   margin: auto;
   text-align: center;
+  z-index: 999999999;
 }
 .grid--cell {
   width: 20%;
@@ -1200,6 +1201,9 @@
 
 
 
+
+
+
 /* signature */
 
 .laptop {
@@ -1208,7 +1212,7 @@
   margin: 0 auto;
 }
 .laptop .screen {
-  width: 80%;
+  width: 60%;
   padding: 5.5% 10%;
   margin: 0 10%;
   background: transparent;
@@ -1227,7 +1231,7 @@
 }
 .laptop .screen .signature svg path {
   fill: none;
-  stroke: #ff8888;
+  stroke: #2d0dfb;
   stroke-width: 10;
   stroke-linecap: round;
   stroke-dasharray: 4000;
@@ -1240,27 +1244,27 @@
   height: 7.65%;
 }
 .laptop .screen .signature .dot.dot1 {
-  background: #ff8888;
+  background: #fa7007;
   top: 10%;
   left: 8%;
 }
 .laptop .screen .signature .dot.dot2 {
-  background: #fffe88;
+  background: #faf60c;
   top: 12.5%;
   left: 7%;
 }
 .laptop .screen .signature .dot.dot3 {
-  background: #99ff88;
+  background: #2efb0a;
   top: 14%;
   left: 9.75%;
 }
 .laptop .screen .signature .dot.dot4 {
-  background: #88f0ff;
+  background: #f70d0d;
   top: 16%;
   left: 11.5%;
 }
 .laptop .screen .signature .dot.dot5 {
-  background: #c688ff;
+  background: #870ef9;
   top: 18.5%;
   left: 15.5%;
 }
