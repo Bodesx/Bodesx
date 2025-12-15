@@ -793,7 +793,14 @@
 
 
 
-
+@media(max-width:1206px){
+    .background-image{
+        display: none;
+    }
+    .jack-box{
+        display: none
+    }
+    }
 
 
 

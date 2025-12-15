@@ -24,6 +24,7 @@
 
 
 
+
    
 
 
@@ -46,9 +47,44 @@
 
 
 <body>
+
+	<div id="initial-loader" class="padded"><span id="loader-text"></span></div>
+
+
+
+
+
+
+
+
+
+<header>
+  <div class="container">
+    <div class="logo-container">
+      <div class="logo-circles">
+        
+      </div>
+    </div>
+
+    <div class="effects">
+      <ul>
+        <li><a href="#" data-effect="flame" class="active">Flame</a></li>
+        <li><a href="#" data-effect="venetian">Venetian</a></li>
+        <li><a href="#" data-effect="curtain">Curtain</a></li>
+        <li><a href="#" data-effect="hexagon">Hexagon</a></li>
+        <li><a href="#" data-effect="liquid">Liquid</a></li>
+        <li><a href="#" data-effect="zoomsplit">Zoom Split</a></li>
+      </ul>
+    </div>
+
    
-<section>
-	
+
+  </div>
+</header>
+
+<section class="hero-section">
+  
+  
 
 <div class="ratio title">
   <div class="case">
@@ -68,25 +104,33 @@
 
 
 
-	<div style="--count: 10; --duration: 16s;">
-		<img src="https://images.pexels.com/photos/614117/pexels-photo-614117.jpeg" style="--i: 1;">
-		<img src="https://images.unsplash.com/photo-1505238680356-667803448bb6?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" style="--i: 2;">
-		<img src="https://images.pexels.com/photos/270360/pexels-photo-270360.jpeg" style="--i: 3;">
-		<img src="https://images.pexels.com/photos/6424587/pexels-photo-6424587.jpeg" style="--i: 4;">
-		<img src="https://images.pexels.com/photos/29445973/pexels-photo-29445973.jpeg" style="--i: 5;">
-		<img src="https://images.pexels.com/photos/10725897/pexels-photo-10725897.jpeg" style="--i: 6;">
-		<img src="https://images.pexels.com/photos/3888151/pexels-photo-3888151.jpeg" style="--i: 7;">
-		<img src="https://images.pexels.com/photos/34600/pexels-photo.jpg" style="--i: 8;">
-		<img src="https://images.pexels.com/photos/943096/pexels-photo-943096.jpeg" style="--i: 9;">
-		<img src="https://images.pexels.com/photos/6424589/pexels-photo-6424589.jpeg" style="--i: 10;">
-	</div>
+  <div class="touch-instruction"></div>
+  <div class="cursor-hint">
+    Move your cursor to create dynamic trails |
+    Click the nav to switch trail effects
+  </div>
+  <div class="speed-indicator"></div>
 </section>
+
+
 
 
 
 </body>
 
+
+
+
+ 
+
+
+
 <script src="photm.js"></script>
 <script src="monitor.js"></script>
+<script src="glick.js"></script>
+
+
+
+
 
 </html>
