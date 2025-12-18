@@ -49,3 +49,136 @@ a {
 .popover__message {
   text-align: center;
 }
+
+
+
+
+
+
+
+
+
+#feed-icon-svg {
+    margin: 50px auto;
+    display: block;
+}
+
+.newspaper-bg {
+    fill: #F8F8F8;
+}
+.newspaper-bg-overlay {
+    fill: #EAEAEA;
+}
+
+.newspaper-title {
+    fill: #484747;
+    fill-rule: evenodd;
+    clip-rule: evenodd;
+}
+
+.newspaper-content {
+    fill: #BABABA;
+    fill-rule: evenodd;
+    clip-rule: evenodd;
+}
+
+#page-one-left .newspaper-heading {
+    fill: #F15E29;
+}
+#page-two-left .newspaper-heading {
+    fill: #109CAC;
+}
+#page-three-left .newspaper-heading {
+    fill: #7AB057;
+}
+
+#page-one-right .newspaper-heading {
+    fill: #E3451F;
+}
+#page-two-right .newspaper-heading {
+    fill: #0D8D92;
+}
+#page-three-right .newspaper-heading {
+    fill: #65A43E;
+}
+
+#page-one-left,
+#page-one-right,
+#page-two-left, 
+#page-two-right, 
+#page-three-left,
+#page-three-right {
+    backface-visibility: hidden;
+    -webkit-transform-style: preserve-3d;
+    -moz-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+    -webkit-transition-property: -webkit-transform, visibility;
+    -moz-transition-property: -moz-transform, visibility;
+    transition-property: transform, visibility;
+	-webkit-transform-origin: left center;
+	-moz-transform-origin: left center;
+	transform-origin: left center;
+    -webkit-transform: rotateY(0deg); 
+}
+#page-two-left, 
+#page-three-left {
+    -webkit-transform-origin: right center;
+	-moz-transform-origin: right center;
+	transform-origin: right center;
+    -webkit-transform: rotateY(-90deg); 
+}
+
+/* #feed-icon-svg:hover #page-one-right {
+    -webkit-animation: page-right 1s 0 ease-in-out;
+    -webkit-transition-property: -webkit-transform, -webkit-transform-origin;
+    -webkit-animation-fill-mode: forwards;
+}
+#feed-icon-svg:hover #page-two-left {
+	-webkit-animation: page-left 1s .8s ease-in-out;
+    -webkit-animation-fill-mode: forwards;
+    -webkit-transition-property: -webkit-transform, -webkit-transform-origin;
+}
+
+#feed-icon-svg:hover #page-two-right {
+    -webkit-animation: page-right 1s 1.5s ease-in-out;
+    -webkit-transition-property: -webkit-transform, -webkit-transform-origin;
+    -webkit-animation-fill-mode: forwards;
+}
+#feed-icon-svg:hover #page-three-left {
+	-webkit-animation: page-left 1s 2.5s ease-in-out;
+    -webkit-animation-fill-mode: forwards;
+    -webkit-transition-property: -webkit-transform, -webkit-transform-origin;
+}
+ */
+#feed-icon-svg:hover {
+	-webkit-animation: newspaper-spin 1s ease;
+    -webkit-animation-fill-mode: forwards;
+    -webkit-transition-property: -webkit-transform, -webkit-transform-origin;
+}
+
+@-webkit-keyframes page-right {
+	0% { -webkit-transform: rotateY(0deg); visibility: visible; }
+	100% { -webkit-transform: rotateY(90deg); visibility: visible; }
+}
+
+@-webkit-keyframes page-left {
+	0% { 
+        -webkit-transform: rotateY(-90deg); 
+        visibility: visible;
+    }
+	100% { 
+        -webkit-transform: rotateY(0deg);
+        visibility: visible;
+    }
+}
+
+
+
+@-webkit-keyframes newspaper-spin {
+    0% { 
+        -webkit-transform: scale(0.2) rotate(0deg);
+    }
+    100% { 
+        -webkit-transform: scale(1) rotate(1440deg);
+    }
+}

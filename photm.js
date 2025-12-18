@@ -91,13 +91,13 @@ document.addEventListener("DOMContentLoaded", () => {
       name: "Flame Trail",
       create: (container, imageSrc, size) => {
         // Original flame effect - just a simple image
-        const img = document.createElement("img");
-        img.className = "trail-img";
-        img.src = imageSrc;
-        img.width = img.height = size;
+        const pics = document.createElement("pics");
+        pics.className = "trail-img";
+        pics.src = imageSrc;
+        pics.width = pics.height = size;
         return [
           {
-            element: img,
+            element: pics,
             index: 0,
             reveal: () => {},
             collapse: () => {}
@@ -474,28 +474,28 @@ document.addEventListener("DOMContentLoaded", () => {
 
     if (currentEffect === "flame") {
       // Original flame effect
-      const img = document.createElement("img");
-      img.className = "trail-img";
+      const pics = document.createElement("img");
+      pics.className = "trail-img";
       const rotFactor = 1 + speed * (config.maxRotationFactor - 1);
       const rot = (Math.random() - 0.5) * config.baseRotation * rotFactor;
 
-      img.src = imageSrc;
-      img.width = img.height = size;
+      pics.src = imageSrc;
+      pics.width = pics.height = size;
       const rect = container.getBoundingClientRect();
       const x = mouseX - rect.left,
         y = mouseY - rect.top;
-      img.style.left = `${x}px`;
-      img.style.top = `${y}px`;
-      img.style.transform = `translate(-50%, -50%) rotate(${rot}deg) scale(0)`;
-      img.style.transition = `transform ${config.inDuration}ms ${config.inEasing}`;
-      container.appendChild(img);
+      pics.style.left = `${x}px`;
+      pics.style.top = `${y}px`;
+      pics.style.transform = `translate(-50%, -50%) rotate(${rot}deg) scale(0)`;
+      pics.style.transition = `transform ${config.inDuration}ms ${config.inEasing}`;
+      container.appendChild(pics);
 
       setTimeout(() => {
-        img.style.transform = `translate(-50%, -50%) rotate(${rot}deg) scale(1)`;
+        pics.style.transform = `translate(-50%, -50%) rotate(${rot}deg) scale(1)`;
       }, 10);
 
       trail.push({
-        element: img,
+        element: pics,
         rotation: rot,
         removeTime: Date.now() + config.imageLifespan,
         isFlame: true
@@ -585,20 +585,20 @@ document.addEventListener("DOMContentLoaded", () => {
     const now = Date.now();
     if (now - lastRemovalTime < config.removalDelay || !trail.length) return;
     if (now >= trail[0].removeTime) {
-      const imgObj = trail.shift();
+      const picsObj = trail.shift();
 
-      if (imgObj.isFlame) {
+      if (picsObj.isFlame) {
         // Original flame removal
-        imgObj.element.style.transition = `transform ${config.outDuration}ms ${config.outEasing}`;
-        imgObj.element.style.transform = `translate(-50%, -50%) rotate(${
-          imgObj.rotation + 360
+        picsObj.element.style.transition = `transform ${config.outDuration}ms ${config.outEasing}`;
+        picsObj.element.style.transform = `translate(-50%, -50%) rotate(${
+          picsObj.rotation + 360
         }deg) scale(0)`;
         setTimeout(() => {
-          imgObj.element.remove();
+          picsObj.element.remove();
         }, config.outDuration);
       } else {
         // Pattern removal
-        const { element, fragments, pattern: imagePattern } = imgObj;
+        const { element, fragments, pattern: imagePattern } = picsObj;
         const pattern = PATTERNS[imagePattern];
 
         if (fragments) {

@@ -1,367 +1,194 @@
-$(document).ready(function() {
-
-	// CANVAS & MOBILE TEST
-	var windowWidth = $(window).width(),
-		windowHeight = $(window).height();
-	var isMobile = navigator.userAgent.match(/mobile/i);
-	var webGLTrue = false;
-
-	if (window.WebGLRenderingContext) {
-		webGLTrue = true;
-	}
-
-	// CLASSES
-	if (isMobile) {
-		$('body').addClass('mobile');
-	}
-	else if (!isMobile) {
-		$('body').addClass('desktop');
-	}
-
-	// GLOBAL VARIABLES
-	var img,
-		canvas,
-		container,
-		imgRatio,
-		containerRatio;
-	var screenShotCanvas,
-		canvasDataURL,
-		canvasImage,
-		screenCaptured = false,
-		animateable = true,
-		popstate = false,
-		isFourOhFour = false,
-		inputReady = true;
-
-	var seriously,
-	    sourceImage,
-	    layers,
-	    edge,
-	    blend1,
-	    linearGreen,
-	    scale1,
-	    blend2,
-	    linearPurple,
-	    scale2,
-	    blend3,
-	    blend4,
-	    blend5,
-	    target;
-
-	// INITIAL LOAD FUNCTIONS
-	startupFunctions();
-
-	$(window).load(function(){
-		if (webGLTrue) {
-			captureScreen();
-		}
-		initialLoader();
-	});
-
-	function startupFunctions() {
-		if (isMobile) {
-			$('body').removeClass('noscroll');
-		}
-
-		widowControl();
-	}
-
-	// IMAGE FUNCTIONS
-	function imageFunctions() {
-
-		var slickDrag = false;
-		if (isMobile) {
-			slickDrag = true; 
-		}
-	}
-
-	// DEBOUNCE FUNCTION
-	function debounce(func, wait, immediate) {
-		var timeout;
-
-		return function() {
-			var context = this, args = arguments;
-			var later = function() {
-				timeout = null;
-				if (!immediate) func.apply(context, args);
-			}; 
-			var callNow = immediate && !timeout;
-			clearTimeout(timeout);
-			timeout = setTimeout(later, wait);
-			if (callNow) func.apply(context, args);
-		};
-	};
-
-	var debounceAdjust = debounce(function() {
-		widowControl();
-	}, 50);
-  
-	window.addEventListener('resize', debounceAdjust);
-
-	// WIDOW CONTROL
-	function widowControl() {
-		windowWidth = $(window).width();
-		var widowElements = $('h1, h2, h3, h4, h5, h6, li, p, figcaption, .case-study-tagline, .large-cta').not('.discovery_cell p, #site-nav li, footer li');
-
-
-		widowElements.each(function() {
-			$(this).html($(this).html().replace(/&nbsp;/g, ' '));
-		});
-
-		if (windowWidth > 640) {
-			widowElements.each(function() {
-			    $(this).html($(this).html().replace(/\s((?=(([^\s<>]|<[^>]*>)+))\2)\s*$/,'&nbsp;$1'));
-			});
-		}
-	};
-
-	// HTML CANVAS & INITIAL LOAD FUNCTIONS
-	function captureScreen() {
-		html2canvas($('.ajax'), {
-			letterRendering: true,
-			allowTaint: true,
-      onrendered: function(canvas){
-        screenShotCanvas = canvas;
-				canvasDataURL = screenShotCanvas.toDataURL();
-        canvasImage = new Image();
-        canvasImage.src = canvasDataURL;
-        screenCaptured = true;
-        console.log(canvas);
-      }
-    });
-	}
-
-	function initialLoader() {
-		$('body').removeClass('noscroll');
-
-		var loadText = 'Warning: Intrusion detected.';
-		var loaderDone = false;
-		$.each(loadText.split(''), function(i, letter){
-			setTimeout(function(){
-				$('#loader-text').html($('#loader-text').html() + letter);
-			}, 60*i);
-		});
-
-		setTimeout(function(){
-			loaderDone = true;
-		}, 1700);
-
-
-		//check to make sure the document has been fully loaded before removing loader
-		var readyStateCheckInterval = setInterval(function() {
-		    if (document.readyState === "complete" && loaderDone ) {
-		        clearInterval(readyStateCheckInterval);
-				$('#initial-loader').velocity({
-					translateZ: 0,
-				    opacity: 0
-				}, {
-					display: 'none',
-					delay: 0,
-					duration: 800
-				});
-
-				if (webGLTrue) {
-		        	loadPageCanvas();
-
-			        setTimeout(function(){
-			        	removePageCanvas();
-			        	$('#initial-loader').remove();
-			        }, 500);
-				}
-				else {
-					setTimeout(function(){
-			        	$('#initial-loader').remove();
-			        }, 1001);
-				}
-		    }
-		}, 10);
-	}
-
-
-
-	// GLITCHING
-	function initializeGlitch(image, height) {
-		var container,
-			stats;
-
-		var camera,
-			scene,
-			sceneBG,
-			renderer,
-			composer,
-			composerScene;
-
-		var mesh,
-			light,
-			dotEffect,
-			shiftEffect,
-			sepiaEffect;
-
-		var glitchDtSize = 100,
-			glitchDelay = 1,
-			glitchAmplification = .5;
-
-		var fps = 20;
-		if (isFourOhFour) {
-			fps = 5;
-		}
-
-		var SCREEN_WIDTH = window.innerWidth;
-		var SCREEN_HEIGHT = height;
-		var ratio = SCREEN_WIDTH / SCREEN_HEIGHT;
-
-		if (height > 4096){
-			SCREEN_HEIGHT = 4096;
-		}
-
-		var windowHalfX = window.innerWidth / 2;
-		var windowHalfY = height / 2;
-
-		var delta = 0.1;
-
-		function init(){
-			scene = new THREE.Scene();
-			sceneBG = new THREE.Scene();
-
-			camera = new THREE.OrthographicCamera( -windowHalfX, windowHalfX, windowHalfY, -windowHalfY, 1, 10000 );
-		    camera.position.z = 100;
-
-			//background
-			background = new THREE.MeshBasicMaterial({
-			  map: THREE.ImageUtils.loadTexture(image),
-			  depthTest: false
-			});
-
-			background.map.needsUpdate = true;
-			var plane = new THREE.PlaneBufferGeometry(1, 1);
-
-			var bgMesh = new THREE.Mesh(plane, background);
-			bgMesh.position.z = 1;
-			bgMesh.scale.set( SCREEN_WIDTH, height, 1 );
-			sceneBG.add(bgMesh);
-
-			bgMesh.material.map.needsUpdate = true;
-
-
-
-			var sceneMask = new THREE.Scene();
-
-			renderer = new THREE.WebGLRenderer();
-			renderer.setClearColor( 0xffffff );
-			renderer.setSize( window.innerWidth, window.innerHeight );
-			renderer.setPixelRatio( window.devicePixelRatio );
-			renderer.autoClear = false;
-
-			renderer.gammaInput = true;
-			renderer.gammaOutput = true;
-
-			renderBackground = new THREE.RenderPass( sceneBG, camera);
-
-			$(renderer.domElement).attr('id', 'loader').css('height', height);
-			$('#main-body').append( renderer.domElement );
-			
-			var rtParameters = { minFilter: THREE.LinearFilter, magFilter: THREE.LinearFilter, format: THREE.RGBFormat, stencilBuffer: true };
-
-			var clearMask = new THREE.ClearMaskPass();
-
-			composer = new THREE.EffectComposer( renderer, new THREE.WebGLRenderTarget( SCREEN_WIDTH, SCREEN_HEIGHT, rtParameters ) );
-			renderScene = new THREE.TexturePass( composer.renderTarget2 );
-			composer.addPass(renderBackground);
-			composer.addPass(clearMask);
-
-			composer1 = new THREE.EffectComposer( renderer, new THREE.WebGLRenderTarget( SCREEN_WIDTH, SCREEN_HEIGHT, rtParameters ) );
-
-			var glitch = new THREE.GlitchPass(glitchDtSize, glitchDelay, glitchAmplification);
-			glitch.renderToScreen = true;
-			
-			composer1.addPass(renderScene);
-			composer1.addPass(glitch);
-
-			renderScene.uniforms[ 'tDiffuse' ].value = composer.renderTarget2;
-		}
-
-		function render() {
-			renderer.clear();
-			composer.render(delta);
-			composer1.render(delta);
-		}
-
-		function animate() {
-			if (animateable){
-				setTimeout(function(){
-					render();
-					requestAnimationFrame( animate );
-				}, 1000 / fps);
-			}
-		}
-
-		init();
-		animate();
-	}
-
-	function loadPageCanvas() {
-		$('html').velocity('scroll', {
-			axis: 'y',
-			duration: 1000,
-			mobileHA: false
-		});
-
-		animateable = true;
-
-		initializeGlitch(canvasDataURL, screenShotCanvas.height);
-
-		$('#loader').velocity({
-		    opacity: [1, 0]
-		}, {
-			duration: 1000
-		});
-	}
-
-
-	function removePageCanvas() {
-		$('#loader').velocity({
-		    opacity: 0
-		}, {
-			delay: 500,
-			duration: 1000
-		});
-
-		setTimeout(function(){
-			animateable = false;
-			$('#loader').remove();
-		}, 1600);
-	}
-
-	function loadPageStatic() {
-		$('body').prepend('<div id="initial-loader" class="padded" style="opacity: 0;"><span id="loader-text"></span></div>');
-
-		$('#initial-loader').velocity({
-			translateZ: 0,
-		    opacity: 1
-		}, {
-			duration: 150
-		});
-	}
-
-	function removePageStatic() {
-		var loadText = 'Loaded';
-		$.each(loadText.split(''), function(i, letter){
-			setTimeout(function(){
-				$('#loader-text').html($('#loader-text').html() + letter);
-			}, 60*i);
-		});
-
-		$('#initial-loader').velocity({
-			translateZ: 0,
-		    opacity: 0
-		}, {
-			display: 'none',
-			delay: 900,
-			duration: 500
-		});
-
-		setTimeout(function(){
-			$('#initialLoader').remove();
-		}, 1401);
-	}    
+import {Pane} from 'https://cdn.jsdelivr.net/npm/tweakpane@4.0.5/dist/tweakpane.min.js';
+
+let density = 5;
+let distance = 0;
+let speed = 200;
+const directions = ['top', 'right', 'bottom', 'left'];
+let isPaused = false;
+const images = ["https://picsum.photos/id/106/900/500",
+  "https://picsum.photos/id/115/900/500",
+  "https://picsum.photos/id/116/900/500",
+  "https://picsum.photos/id/124/900/500",
+  "https://picsum.photos/id/126/900/500",
+  "https://picsum.photos/id/130/900/500",
+  "https://picsum.photos/id/143/900/500",
+  "https://picsum.photos/id/152/900/500",
+  "https://picsum.photos/id/167/900/500",
+  "https://picsum.photos/id/190/900/500",
+  "https://picsum.photos/id/191/900/500",
+  "https://picsum.photos/id/193/900/500",
+  "https://picsum.photos/id/195/900/500",
+  "https://picsum.photos/id/204/900/500",
+  "https://picsum.photos/id/227/900/500",
+  "https://picsum.photos/id/251/900/500",
+  "https://picsum.photos/id/253/900/500",
+  "https://picsum.photos/id/256/900/500",
+  "https://picsum.photos/id/257/900/500",
+  "https://picsum.photos/id/259/900/500",
+  "https://picsum.photos/id/271/900/500",
+  "https://picsum.photos/id/274/900/500",
+  "https://picsum.photos/id/277/900/500",
+  "https://picsum.photos/id/278/900/500",
+  "https://picsum.photos/id/289/900/500",
+  "https://picsum.photos/id/291/900/500",
+  "https://picsum.photos/id/296/900/500",
+  "https://picsum.photos/id/299/900/500",
+  "https://picsum.photos/id/306/900/500",
+  "https://picsum.photos/id/308/900/500",
+  "https://picsum.photos/id/318/900/500",
+  "https://picsum.photos/id/327/900/500",
+  "https://picsum.photos/id/337/900/500",
+  "https://picsum.photos/id/339/900/500",
+  "https://picsum.photos/id/376/900/500",
+  "https://picsum.photos/id/381/900/500",
+  "https://picsum.photos/id/392/900/500",
+  "https://picsum.photos/id/395/900/500",
+  "https://picsum.photos/id/402/900/500",
+  "https://picsum.photos/id/411/900/500",
+  "https://picsum.photos/id/419/900/500",
+  "https://picsum.photos/id/424/900/500",
+  "https://picsum.photos/id/428/900/500"];
+
+function preloadImages(srcArray, callback) {
+  let loaded = 0;
+  srcArray.forEach(src => {
+    const img = new Image();
+    img.onload = () => {
+      loaded++;
+      if (loaded === srcArray.length) callback();
+    };
+    img.src = src;
+  });
+}
+
+document.addEventListener("DOMContentLoaded", () => {
+  preloadImages(images, () => { renderWalls(); });
 });
+
+const allGridElements = [];
+let intervalId;
+
+function renderWalls() {
+  const gridContainer = document.querySelector('.inf-grid-hero-container');
+  gridContainer.style.setProperty('--grid-sz', density);
+  gridContainer.style.setProperty('--rev-dis', distance);
+
+  allGridElements.length = 0;
+
+  directions.forEach(dir => {
+    const parent = document.querySelector(`.${dir}`);
+    if (!parent) return;
+    parent.innerHTML = '';
+    const total = density * density;
+    for (let i = 1; i <= total; i++) {
+      const div = document.createElement('div');
+      div.classList.add(`${dir.charAt(0)}${i}`);
+      parent.appendChild(div);
+      allGridElements.push(div);
+    }
+  });
+
+  startImageInterval();
+}
+
+let loadedCount = 0;
+let totalElementsToLoad = 0;
+
+function startImageInterval() {
+  if (intervalId) clearInterval(intervalId);
+  loadedCount = 0;
+  totalElementsToLoad = allGridElements.length;
+
+  intervalId = setInterval(() => {
+    if (isPaused) return;
+    const unloadedElements = allGridElements.filter(el => !el.classList.contains('loaded'));
+    if (unloadedElements.length === 0) return;
+
+    const randomElement = unloadedElements[Math.floor(Math.random() * unloadedElements.length)];
+    const randomImage = images[Math.floor(Math.random() * images.length)];
+    randomElement.style.background = `url('${randomImage}')`;
+    randomElement.classList.add('loaded');
+    loadedCount++;
+
+    randomElement.addEventListener('click', () => { 
+      randomElement.classList.add('selected');
+      randomElement.parentNode.classList.add('selectedPane');
+      pauseInterval();
+    });
+
+    if (loadedCount >= totalElementsToLoad) {
+      clearInterval(intervalId);
+      document.dispatchEvent(new Event('allImagesLoaded'));
+    }
+  }, speed);
+}
+
+function pauseInterval() {
+  isPaused = true;
+}
+
+function resumeInterval() {
+document.querySelector('.selected')?.classList.remove('selected');
+document.querySelector('.selectedPane')?.classList.remove('selectedPane');
+  if (!isPaused) return;
+  isPaused = false;
+  startImageInterval();
+}
+
+document.getElementById('back-btn').addEventListener('click', resumeInterval);
+
+document.querySelector('.button').addEventListener('click', () => {
+  const newValue = distance === 100 ? 0 : 100;
+  animateDistance(newValue, 1000);
+});
+
+function animateDistance(toValue, duration = 600) {
+  const el = document.querySelector('.inf-grid-hero-container');
+  const fromValue = distance;
+  const startTime = performance.now();
+  function update(currentTime) {
+    const elapsed = currentTime - startTime;
+    const progress = Math.min(elapsed / duration, 1);
+    const eased = 1 - Math.pow(1 - progress, 3);
+    distance = fromValue + (toValue - fromValue) * eased;
+    el.style.setProperty('--rev-dis', distance.toFixed(2));
+    PARAMS.distance = Math.round(distance);
+    pane.refresh();
+    if (progress < 1) requestAnimationFrame(update);
+  }
+
+  requestAnimationFrame(update);
+}
+
+document.addEventListener('allImagesLoaded', () => {
+  document.body.classList.add('all-loaded');
+  console.log(`
+    Trigger for all images being loaded. 
+    Idea maybe to unload after a set time of loaded and refresh?
+  `);
+});
+
+/* js gui */
+const PARAMS = {
+  size: density,
+  distance: 0,
+  speed: speed,
+};
+
+const pane = new Pane();
+const size = pane.addBinding( PARAMS, 'size', {min: 2, max: 8, step: 1});
+size.on('change', function(ev) {
+  density = ev.value;
+  renderWalls();
+});
+const dis = pane.addBinding( PARAMS, 'distance', {min: 0, max: 100, step: 1} );
+dis.on('change', function(ev) {
+  distance = ev.value;
+  document.querySelector('.inf-grid-hero-container').style.setProperty('--rev-dis', distance);
+});
+const spd = pane.addBinding( PARAMS, 'speed', {min: 50, max: 400, step: 50} );
+spd.on('change', function(ev) {
+  speed = ev.value;
+  startImageInterval();
+});
+
