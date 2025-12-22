@@ -133,7 +133,7 @@ ScrollReveal().reveal('.skills,  heading',{origin:'bottom'})
 
 /*multiple text writing from type js */
 const typed =new Typed('.multiple-text', {
-  strings:[' Lawanson Olubode Francis is a skilled Software Engineer and IT Professional with expertise in web development, design, artificial intelligence, and network configuration. With a masters degree in Computer Science from Afe Babalola University, he has extensive experience in technical support, system maintenance, and security management. Known for his ability to explain complex technical issues clearly, Francis excels in team collaboration and remains dedicated to continuous learning and staying ahead in IT innovation', ''],
+  strings:[' Lawanson Olubode Francis is a skilled Software Engineer and IT Professional with expertise in web development, design, artificial intelligence, and networking(routing and switch), I believe that technology has the power to change the world, and I am excited to continue learning and exploring its infinite potential.Did I mention I like space? My space, not that space; I am frightened by it.  ', ''],
   typeSpeed:50,
   backSpeed:1,
   backDelay:1000,
